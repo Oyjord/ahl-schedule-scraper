@@ -13,26 +13,30 @@ def parse_goal_scorers(report_url, home_team, away_team)
     html = URI.open(report_url).read
     doc = Nokogiri::HTML(html)
 
-    goal_lines = doc.css('tr, li, div').map(&:text).select { |t| t =~ /Goal/i }
+    text = doc.text
+    lines = text.split(/[\r\n]+/).map(&:strip)
 
     home_goals, away_goals = [], []
 
-    goal_lines.each do |line|
-      # Try to capture "12:34 1st" style time/period
-      time_period = line[/\d{1,2}:\d{2}\s*(?:1st|2nd|3rd|OT|SO)/i]
-      scorer      = line[/[A-Z][a-z]+ [A-Z][a-z]+/] # crude full name match
-      assists     = line[/(.*?)/, 1]            # text inside parentheses
+    lines.each do |line|
+      # Match lines like: "3, Ontario, Connors 1 (Jämsen, Lovell), 12:10."
+      if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?),\s*([\d:]+)/
+        team   = $1
+        scorer = $2.strip
+        time   = $3.strip
 
-      next unless scorer
+        # Extract assists if present in parentheses
+        assists = scorer[/(.*?)/, 1]
+        scorer  = scorer.sub(/.*/, '').strip
 
-      entry = "#{scorer}"
-      entry += " (#{time_period})" if time_period
-      entry += " assisted by #{assists}" if assists && !assists.empty?
+        entry = "#{scorer} (#{time})"
+        entry += " assisted by #{assists}" if assists
 
-      if line.include?(home_team)
-        home_goals << entry
-      elsif line.include?(away_team)
-        away_goals << entry
+        if team == home_team
+          home_goals << entry
+        else
+          away_goals << entry
+        end
       end
     end
 
