@@ -13,28 +13,26 @@ def parse_goal_scorers(report_url, home_team, away_team)
     html = URI.open(report_url).read
     doc = Nokogiri::HTML(html)
 
-    # AHL text reports usually list goals in <tr> or <li> rows containing "Goal"
-    goal_rows = doc.css('tr, li, div').select { |el| el.text.include?("Goal") }
+    goal_lines = doc.css('tr, li, div').map(&:text).select { |t| t =~ /Goal/i }
 
-    home_goals = []
-    away_goals = []
+    home_goals, away_goals = [], []
 
-    goal_rows.each do |row|
-      text = row.text.strip
-      # Example text: "1. 12:34 1st - John Doe (Smith, Brown) ONT Goal"
-      if text =~ /(\d+:\d+)\s+(\d\w+)\s+-\s+(.+?)\s+(.*?)/
-        time = $1
-        period = $2
-        scorer = $3.strip
-        assists = $4.strip
-        line = "#{scorer} (#{period}, #{time})"
-        line += " assisted by #{assists}" unless assists.empty?
+    goal_lines.each do |line|
+      # Try to capture "12:34 1st" style time/period
+      time_period = line[/\d{1,2}:\d{2}\s*(?:1st|2nd|3rd|OT|SO)/i]
+      scorer      = line[/[A-Z][a-z]+ [A-Z][a-z]+/] # crude full name match
+      assists     = line[/(.*?)/, 1]            # text inside parentheses
 
-        if text.include?(home_team)
-          home_goals << line
-        elsif text.include?(away_team)
-          away_goals << line
-        end
+      next unless scorer
+
+      entry = "#{scorer}"
+      entry += " (#{time_period})" if time_period
+      entry += " assisted by #{assists}" if assists && !assists.empty?
+
+      if line.include?(home_team)
+        home_goals << entry
+      elsif line.include?(away_team)
+        away_goals << entry
       end
     end
 
