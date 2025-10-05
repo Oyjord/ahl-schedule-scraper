@@ -15,7 +15,7 @@ def parse_goal_scorers(summary_url, home_team, away_team)
 
     home_goals, away_goals = [], []
 
-    # Inspect the page: the goal summary is usually in a table with class "goal-summary"
+    # The summary page has a "goal-summary" table
     doc.css('table.goal-summary tr').each do |row|
       cells = row.css('td').map { |td| td.text.strip }
       next if cells.empty? || cells[0] == "Per"
@@ -63,12 +63,15 @@ games = []
       game_center_url: g.game_center_url,
       game_report_url: (g.respond_to?(:game_report_url) ? (g.game_report_url rescue nil) : nil),
       game_sheet_url: (g.respond_to?(:game_sheet_url) ? (g.game_sheet_url rescue nil) : nil),
+      # 👇 new summary URL
+      game_summary_url: "https://theahl.com/stats/game-summary/#{g.game_id}",
       season_type: season[:type]
     }.compact
 
-    if g.status.downcase.include?("final") && game_hash[:game_report_url]
-      puts "ENRICHING #{g.game_id} with report #{game_hash[:game_report_url]}"
-      scorers = parse_goal_scorers(game_hash[:game_report_url],
+    # ✅ Enrich with goal scorers from summary page
+    if g.status.downcase.include?("final")
+      puts "ENRICHING #{g.game_id} with summary #{game_hash[:game_summary_url]}"
+      scorers = parse_goal_scorers(game_hash[:game_summary_url],
                                    game_hash[:home_team],
                                    game_hash[:away_team])
       game_hash[:home_goals] = scorers[:home]
