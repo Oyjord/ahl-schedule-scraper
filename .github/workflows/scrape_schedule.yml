@@ -1,14 +1,6 @@
-name: Scrape Reign Schedule
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 * * * *"   # runs hourly, adjust as needed
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -20,21 +12,20 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install bundler
-          bundle install || true
+          gem install ahl_scraper
+          gem install nokogiri
+          gem install json
 
       - name: Run scraper
         run: ruby scrape_reign_schedule.rb
 
-      # 🔎 Upload debug_report.txt so you can inspect raw report text
       - name: Upload debug report
-        if: always()   # ensures upload even if parsing fails
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: debug-report
           path: debug_report.txt
 
-      # 📥 Upload the generated JSON as well
       - name: Upload schedule JSON
         if: always()
         uses: actions/upload-artifact@v4
