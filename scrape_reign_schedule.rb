@@ -19,14 +19,12 @@ def parse_goal_scorers(report_url, home_team, away_team)
 
     home_goals, away_goals = [], []
 
-   lines.each do |line|
-  # Match lines like: "3, Ontario, Connors 1 (Jämsen, Lovell), 12:10"
-  if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
+  lines.each do |line|
+  if line =~ /(?:Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
     team   = $1
     scorer_and_assists = $2.strip
     time   = $3.strip
 
-    # Extract assists if present in parentheses
     assists = scorer_and_assists[/(.*?)/, 1]
     scorer  = scorer_and_assists.sub(/.*/, '').strip
 
@@ -40,13 +38,6 @@ def parse_goal_scorers(report_url, home_team, away_team)
     else
       away_goals << entry
     end
-  end
-end
-
-    { home: home_goals, away: away_goals }
-  rescue => e
-    puts "⚠️ Failed to parse scorers from #{report_url}: #{e}"
-    { home: [], away: [] }
   end
 end
 
