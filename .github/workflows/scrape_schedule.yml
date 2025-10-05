@@ -1,9 +1,9 @@
 name: Scrape Reign Schedule
 
 on:
-  workflow_dispatch:   # allow manual runs
+  workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"   # run hourly; adjust as needed
+    - cron: "0 * * * *"   # hourly
 
 jobs:
   build:
@@ -25,17 +25,15 @@ jobs:
           gem install json
 
       - name: Run scraper
-        run: ruby scrape_reign_schedule.rb
+        run: ruby scrape_reign_schedule.rb | tee debug_report.txt
 
-      # 🔎 Upload debug_report.txt so you can inspect raw report text
-      - name: Upload debug report
-        if: always()   # ensures upload even if parsing fails
+      - name: Upload debug log
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: debug-report
           path: debug_report.txt
 
-      # 📥 Upload the generated JSON as well
       - name: Upload schedule JSON
         if: always()
         uses: actions/upload-artifact@v4
