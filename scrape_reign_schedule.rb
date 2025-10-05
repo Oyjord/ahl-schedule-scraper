@@ -7,31 +7,37 @@ TEAM_ID       = 403
 PRESEASON_ID  = 89
 REGULAR_ID    = 90
 
-def parse_goal_scorers(summary_url, home_team, away_team)
-  return { home: [], away: [] } unless summary_url
+def parse_goal_scorers(report_url, home_team, away_team)
+  return { home: [], away: [] } unless report_url
   begin
-    html = URI.open(summary_url).read
+    html = URI.open(report_url).read
     doc  = Nokogiri::HTML(html)
+
+    text  = doc.text
+    lines = text.split('.').map(&:strip)
 
     home_goals, away_goals = [], []
 
-    # The summary page has a "goal-summary" table
-    doc.css('table.goal-summary tr').each do |row|
-      cells = row.css('td').map { |td| td.text.strip }
-      next if cells.empty? || cells[0] == "Per"
+    lines.each do |line|
+      # Look for lines that contain a team name and a mm:ss time
+      next unless line =~ /(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)})/ && line =~ /\d{1,2}:\d{2}/
 
-      period  = cells[0]
-      time    = cells[1]
-      team    = cells[2]
-      scorer  = cells[3]
-      assists = cells[4]
+      parts = line.split(',')
+      next if parts.length < 3
 
-      entry = "#{scorer} (#{period} #{time})"
-      entry += " assisted by #{assists}" unless assists.nil? || assists.empty?
+      team   = parts[1].strip
+      scorer_and_assists = parts[2..-2].join(',').strip
+      time   = parts[-1].strip
+
+      assists = scorer_and_assists[/(.*?)/, 1]
+      scorer  = scorer_and_assists.sub(/.*/, '').strip
+
+      entry = "#{scorer} (#{time})"
+      entry += " assisted by #{assists}" if assists && !assists.empty?
 
       puts "PARSED: #{entry}"
 
-      if team.include?(home_team)
+      if team == home_team
         home_goals << entry
       else
         away_goals << entry
@@ -40,7 +46,7 @@ def parse_goal_scorers(summary_url, home_team, away_team)
 
     { home: home_goals, away: away_goals }
   rescue => e
-    puts "⚠️ Failed to parse scorers from #{summary_url}: #{e}"
+    puts "⚠️ Failed to parse scorers from #{report_url}: #{e}"
     { home: [], away: [] }
   end
 end
@@ -63,15 +69,13 @@ games = []
       game_center_url: g.game_center_url,
       game_report_url: (g.respond_to?(:game_report_url) ? (g.game_report_url rescue nil) : nil),
       game_sheet_url: (g.respond_to?(:game_sheet_url) ? (g.game_sheet_url rescue nil) : nil),
-      # 👇 new summary URL
       game_summary_url: "https://theahl.com/stats/game-summary/#{g.game_id}",
       season_type: season[:type]
     }.compact
 
-    # ✅ Enrich with goal scorers from summary page
-    if g.status.downcase.include?("final")
-      puts "ENRICHING #{g.game_id} with summary #{game_hash[:game_summary_url]}"
-      scorers = parse_goal_scorers(game_hash[:game_summary_url],
+    if g.status.downcase.include?("final") && game_hash[:game_report_url]
+      puts "ENRICHING #{g.game_id} with report #{game_hash[:game_report_url]}"
+      scorers = parse_goal_scorers(game_hash[:game_report_url],
                                    game_hash[:home_team],
                                    game_hash[:away_team])
       game_hash[:home_goals] = scorers[:home]
