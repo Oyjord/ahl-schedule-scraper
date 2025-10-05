@@ -14,17 +14,29 @@ def parse_goal_scorers(report_url, home_team, away_team)
     doc = Nokogiri::HTML(html)
 
     text = doc.text
-    # 🔎 Write out the raw text so you can inspect it in workflow artifacts
-    File.write("debug_report.txt", text)
-
-    lines = text.split(/[\r\n]+/).map(&:strip)
+    # Split on '.' instead of newlines
+    lines = text.split('.').map(&:strip)
 
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      # For now just print any line that mentions either team
-      if line.include?(home_team) || line.include?(away_team)
-        puts "LINE: #{line}"
+      # Match lines like: "3, Ontario, Connors 1 (Jämsen, Lovell), 12:10"
+      if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?),\s*([\d:]+)$/
+        team   = $1
+        scorer_and_assists = $2.strip
+        time   = $3.strip
+
+        assists = scorer_and_assists[/(.*?)/, 1]
+        scorer  = scorer_and_assists.sub(/.*/, '').strip
+
+        entry = "#{scorer} (#{time})"
+        entry += " assisted by #{assists}" if assists && !assists.empty?
+
+        if team == home_team
+          home_goals << entry
+        else
+          away_goals << entry
+        end
       end
     end
 
