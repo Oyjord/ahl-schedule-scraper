@@ -3,51 +3,58 @@ require 'json'
 require 'open-uri'
 require 'nokogiri'
 
-team_id       = 403
-preseason_id  = 89
-regular_id    = 90
+TEAM_ID       = 403
+PRESEASON_ID  = 89
+REGULAR_ID    = 90
 
 def parse_goal_scorers(report_url, home_team, away_team)
   return { home: [], away: [] } unless report_url
   begin
     html = URI.open(report_url).read
-    doc = Nokogiri::HTML(html)
+    doc  = Nokogiri::HTML(html)
 
-    text = doc.text
-    # Split on '.' since the report is one long line
+    text  = doc.text
     lines = text.split('.').map(&:strip)
 
     home_goals, away_goals = [], []
 
-  lines.each do |line|
-  if line =~ /(?:Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
-    team   = $1
-    scorer_and_assists = $2.strip
-    time   = $3.strip
+    lines.each do |line|
+      # Match both "1st Period-1, ..." and "3, Ontario, ..."
+      if line =~ /(?:Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
+        team   = $1
+        scorer_and_assists = $2.strip
+        time   = $3.strip
 
-    assists = scorer_and_assists[/(.*?)/, 1]
-    scorer  = scorer_and_assists.sub(/.*/, '').strip
+        assists = scorer_and_assists[/(.*?)/, 1]
+        scorer  = scorer_and_assists.sub(/.*/, '').strip
 
-    entry = "#{scorer} (#{time})"
-    entry += " assisted by #{assists}" if assists && !assists.empty?
+        entry = "#{scorer} (#{time})"
+        entry += " assisted by #{assists}" if assists && !assists.empty?
 
-    puts "PARSED: #{entry}"
+        puts "PARSED: #{entry}"
 
-    if team == home_team
-      home_goals << entry
-    else
-      away_goals << entry
+        if team == home_team
+          home_goals << entry
+        else
+          away_goals << entry
+        end
+      end
     end
+
+    { home: home_goals, away: away_goals }
+  rescue => e
+    puts "⚠️ Failed to parse scorers from #{report_url}: #{e}"
+    { home: [], away: [] }
   end
 end
 
 games = []
 
 [
-  { id: preseason_id, type: "preseason" },
-  { id: regular_id,   type: "regular" }
+  { id: PRESEASON_ID, type: "preseason" },
+  { id: REGULAR_ID,   type: "regular" }
 ].each do |season|
-  AhlScraper::TeamGames.list(team_id, season[:id]).each do |g|
+  AhlScraper::TeamGames.list(TEAM_ID, season[:id]).each do |g|
     game_hash = {
       game_id: g.game_id,
       date: g.date,
@@ -62,7 +69,6 @@ games = []
       season_type: season[:type]
     }.compact
 
-    # ✅ Enrich with goal scorers if Final
     if g.status.downcase.include?("final") && game_hash[:game_report_url]
       puts "ENRICHING #{g.game_id} with report #{game_hash[:game_report_url]}"
       scorers = parse_goal_scorers(game_hash[:game_report_url],
@@ -76,7 +82,6 @@ games = []
   end
 end
 
-# Sort chronologically
 games.sort_by! { |g| g[:date] }
 
 File.write("reign_schedule.json", JSON.pretty_generate(games))
