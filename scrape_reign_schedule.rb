@@ -20,28 +20,28 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      # Match lines like: "3, Ontario, Connors 1 (Jämsen, Lovell), 12:10"
-      if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*([\d:]+)/
-        team   = $1
-        scorer_and_assists = $2.strip
-        time   = $3.strip
+  # Match lines like: "3, Ontario, Connors 1 (Jämsen, Lovell), 12:10"
+  if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
+    team   = $1
+    scorer_and_assists = $2.strip
+    time   = $3.strip
 
-        # Extract assists if present in parentheses
-        assists = scorer_and_assists[/(.*?)/, 1]
-        scorer  = scorer_and_assists.sub(/.*/, '').strip
+    # Extract assists if present in parentheses
+    assists = scorer_and_assists[/(.*?)/, 1]
+    scorer  = scorer_and_assists.sub(/.*/, '').strip
 
-        entry = "#{scorer} (#{time})"
-        entry += " assisted by #{assists}" if assists && !assists.empty?
+    entry = "#{scorer} (#{time})"
+    entry += " assisted by #{assists}" if assists && !assists.empty?
 
-        puts "PARSED: #{entry}"  # debug output in Actions log
+    puts "PARSED: #{entry}"
 
-        if team == home_team
-          home_goals << entry
-        else
-          away_goals << entry
-        end
-      end
+    if team == home_team
+      home_goals << entry
+    else
+      away_goals << entry
     end
+  end
+end
 
     { home: home_goals, away: away_goals }
   rescue => e
