@@ -7,38 +7,31 @@ TEAM_ID       = 403
 PRESEASON_ID  = 89
 REGULAR_ID    = 90
 
-def parse_goal_scorers(report_url, home_team, away_team)
-  return { home: [], away: [] } unless report_url
+def parse_goal_scorers(summary_url, home_team, away_team)
+  return { home: [], away: [] } unless summary_url
   begin
-    html = URI.open(report_url).read
+    html = URI.open(summary_url).read
     doc  = Nokogiri::HTML(html)
-
-    text  = doc.text
-    lines = text.split('.').map(&:strip)
 
     home_goals, away_goals = [], []
 
-    lines.each do |line|
-      # Only process lines that look like goals (contain both teams and a time)
-      next unless line =~ /(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)})/ && line =~ /\d{1,2}:\d{2}/
+    # Inspect the page: the goal summary is usually in a table with class "goal-summary"
+    doc.css('table.goal-summary tr').each do |row|
+      cells = row.css('td').map { |td| td.text.strip }
+      next if cells.empty? || cells[0] == "Per"
 
-      # Example: "1st Period-1, Coachella Valley, Price 1 (Goyette, Dragicevic), 15:20"
-      parts = line.split(',')
-      next if parts.length < 3
+      period  = cells[0]
+      time    = cells[1]
+      team    = cells[2]
+      scorer  = cells[3]
+      assists = cells[4]
 
-      team   = parts[1].strip
-      scorer_and_assists = parts[2..-2].join(',').strip  # join in case assists contain commas
-      time   = parts[-1].strip
-
-      assists = scorer_and_assists[/(.*?)/, 1]
-      scorer  = scorer_and_assists.sub(/.*/, '').strip
-
-      entry = "#{scorer} (#{time})"
-      entry += " assisted by #{assists}" if assists && !assists.empty?
+      entry = "#{scorer} (#{period} #{time})"
+      entry += " assisted by #{assists}" unless assists.nil? || assists.empty?
 
       puts "PARSED: #{entry}"
 
-      if team == home_team
+      if team.include?(home_team)
         home_goals << entry
       else
         away_goals << entry
@@ -47,7 +40,7 @@ def parse_goal_scorers(report_url, home_team, away_team)
 
     { home: home_goals, away: away_goals }
   rescue => e
-    puts "⚠️ Failed to parse scorers from #{report_url}: #{e}"
+    puts "⚠️ Failed to parse scorers from #{summary_url}: #{e}"
     { home: [], away: [] }
   end
 end
