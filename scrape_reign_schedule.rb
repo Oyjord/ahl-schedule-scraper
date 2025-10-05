@@ -19,24 +19,29 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      if line =~ /(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
-        team   = $1
-        scorer_and_assists = $2.strip
-        time   = $3.strip
+      # Only process lines that look like goals (contain both teams and a time)
+      next unless line =~ /(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)})/ && line =~ /\d{1,2}:\d{2}/
 
-        assists = scorer_and_assists[/(.*?)/, 1]
-        scorer  = scorer_and_assists.sub(/.*/, '').strip
+      # Example: "1st Period-1, Coachella Valley, Price 1 (Goyette, Dragicevic), 15:20"
+      parts = line.split(',')
+      next if parts.length < 3
 
-        entry = "#{scorer} (#{time})"
-        entry += " assisted by #{assists}" if assists && !assists.empty?
+      team   = parts[1].strip
+      scorer_and_assists = parts[2..-2].join(',').strip  # join in case assists contain commas
+      time   = parts[-1].strip
 
-        puts "PARSED: #{entry}"
+      assists = scorer_and_assists[/(.*?)/, 1]
+      scorer  = scorer_and_assists.sub(/.*/, '').strip
 
-        if team == home_team
-          home_goals << entry
-        else
-          away_goals << entry
-        end
+      entry = "#{scorer} (#{time})"
+      entry += " assisted by #{assists}" if assists && !assists.empty?
+
+      puts "PARSED: #{entry}"
+
+      if team == home_team
+        home_goals << entry
+      else
+        away_goals << entry
       end
     end
 
