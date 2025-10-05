@@ -1,9 +1,9 @@
-name: Update Reign Schedule
+name: Scrape Reign Schedule
 
 on:
-  workflow_dispatch:   # allow manual runs
+  workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"   # every hour; adjust as needed
+    - cron: "0 * * * *"   # runs hourly, adjust as needed
 
 jobs:
   build:
@@ -16,21 +16,28 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'   # or whatever version you use
+          ruby-version: '3.2'
 
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle install || true   # if you have a Gemfile
-          gem install ahl_scraper  # ensure the gem is available
+          bundle install || true
 
       - name: Run scraper
         run: ruby scrape_reign_schedule.rb
 
-      - name: Commit and push updated JSON
-        run: |
-          git config user.name "Oyjord"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reign_schedule.json
-          git commit -m "Auto-update Reign schedule [skip ci]" || echo "No changes to commit"
-          git push
+      # 🔎 Upload debug_report.txt so you can inspect raw report text
+      - name: Upload debug report
+        if: always()   # ensures upload even if parsing fails
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-report
+          path: debug_report.txt
+
+      # 📥 Upload the generated JSON as well
+      - name: Upload schedule JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reign-schedule
+          path: reign_schedule.json
