@@ -1,0 +1,36 @@
+name: Update Reign Schedule
+
+on:
+  workflow_dispatch:   # allow manual runs
+  schedule:
+    - cron: "0 * * * *"   # every hour; adjust as needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'   # or whatever version you use
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install || true   # if you have a Gemfile
+          gem install ahl_scraper  # ensure the gem is available
+
+      - name: Run scraper
+        run: ruby scrape_reign_schedule.rb
+
+      - name: Commit and push updated JSON
+        run: |
+          git config user.name "Oyjord"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reign_schedule.json
+          git commit -m "Auto-update Reign schedule [skip ci]" || echo "No changes to commit"
+          git push
