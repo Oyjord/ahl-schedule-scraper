@@ -593,7 +593,13 @@
     "game_center_url": "https://theahl.com/stats/game-center/1028942",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028942&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028942&lang_id=1",
-    "season_type": "preseason"
+    "season_type": "preseason",
+    "home_goals": [
+
+    ],
+    "away_goals": [
+
+    ]
   },
   {
     "game_id": 1028840,
