@@ -19,8 +19,7 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      # Match both "1st Period-1, ..." and "3, Ontario, ..."
-      if line =~ /(?:Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
+      if line =~ /(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+(?:[^)]*)?)\s*,\s*([\d:]+)/
         team   = $1
         scorer_and_assists = $2.strip
         time   = $3.strip
