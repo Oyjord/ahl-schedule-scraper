@@ -20,7 +20,7 @@ def parse_goal_scorers(report_url, home_team, away_team)
 
     lines.each do |line|
       # Match lines like: "3, Ontario, Connors 1 (Jämsen, Lovell), 12:10."
-      if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+),\s*([\d:]+)/
+      if line =~ /^\d+.*?,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?),\s*([\d:]+)/
         team   = $1
         scorer_and_assists = $2.strip
         time   = $3.strip
@@ -30,7 +30,7 @@ def parse_goal_scorers(report_url, home_team, away_team)
         scorer  = scorer_and_assists.sub(/.*/, '').strip
 
         entry = "#{scorer} (#{time})"
-        entry += " assisted by #{assists}" if assists
+        entry += " assisted by #{assists}" if assists && !assists.empty?
 
         if team == home_team
           home_goals << entry
