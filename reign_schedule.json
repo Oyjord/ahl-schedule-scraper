@@ -637,13 +637,13 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028957",
     "season_type": "preseason",
     "home_goals": [
-      "Pinelli 1 (3:22) [SH] [2nd Period]",
-      "Lawrence 1 (Isogai (9:37) assisted by Doty) [2nd Period]",
-      "Chromiak 1 (Pinelli (14:44) assisted by Hughes)"
+      "Pinelli 1 (2nd Period 3:22) [SH]",
+      "Lawrence 1 (Isogai (2nd Period 9:37) assisted by Doty)",
+      "Chromiak 1 (Pinelli ( Period 14:44) assisted by Hughes)"
     ],
     "away_goals": [
-      "Pastujov 1 (Myšák) (1:32) [31st Period]",
-      "Myšák 1 (Francis) (1:20) [3rd Period]"
+      "Pastujov 1 (Myšák) (31st Period 1:32)",
+      "Myšák 1 (Francis) (3rd Period 1:20)"
     ]
   },
   {
@@ -660,15 +660,15 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028942",
     "season_type": "preseason",
     "home_goals": [
-      "Connors 1 (Jämsen (12:10) assisted by Lovell)",
-      "Jämsen 1 (Ziemmer) (19:44)",
-      "Jämsen 2 (Ziemmer (13:04) assisted by Connors) [3rd Period]",
-      "Hughes 1 (Isogai (13:30) assisted by Hausinger)",
-      "O'Hara 1 (Mastrodonato) (19:52)"
+      "Connors 1 (Jämsen ( Period 12:10) assisted by Lovell)",
+      "Jämsen 1 (Ziemmer) ( Period 19:44)",
+      "Jämsen 2 (Ziemmer (3rd Period 13:04) assisted by Connors)",
+      "Hughes 1 (Isogai ( Period 13:30) assisted by Hausinger)",
+      "O'Hara 1 (Mastrodonato) ( Period 19:52)"
     ],
     "away_goals": [
-      "Price 1 (Goyette (15:20) assisted by Dragicevic) [51st Period]",
-      "Firkus 1 (Janicke) (11:19) [2nd Period]"
+      "Price 1 (Goyette (51st Period 15:20) assisted by Dragicevic)",
+      "Firkus 1 (Janicke) (2nd Period 11:19)"
     ]
   },
   {
