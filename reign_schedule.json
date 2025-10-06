@@ -637,10 +637,12 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028957",
     "season_type": "preseason",
     "home_goals": [
-
+      "Lawrence 1 (Isogai (9:37) assisted by Doty)",
+      "Chromiak 1 (Pinelli (14:44) assisted by Hughes)"
     ],
     "away_goals": [
-
+      "Pastujov 1 (Myšák) (1:32)",
+      "Myšák 1 (Francis) (1:20)"
     ]
   },
   {
@@ -657,10 +659,15 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028942",
     "season_type": "preseason",
     "home_goals": [
-
+      "Connors 1 (Jämsen (12:10) assisted by Lovell)",
+      "Jämsen 1 (Ziemmer) (19:44)",
+      "Jämsen 2 (Ziemmer (13:04) assisted by Connors)",
+      "Hughes 1 (Isogai (13:30) assisted by Hausinger)",
+      "O'Hara 1 (Mastrodonato) (19:52)"
     ],
     "away_goals": [
-
+      "Price 1 (Goyette (15:20) assisted by Dragicevic)",
+      "Firkus 1 (Janicke) (11:19)"
     ]
   },
   {
