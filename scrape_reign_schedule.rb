@@ -41,25 +41,25 @@ def parse_goal_scorers(report_url, home_team, away_team)
         end
       else
         # Fallback for lines like: "2, Ontario, Pinelli 1   3:22 (SH)"
-        fallback = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^\d]+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
+      fallback = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^\d]+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
 
-        if fallback
-          team = fallback[1]
-          scorer = fallback[2].strip
-          time = fallback[3].strip
-          strength = fallback[4].strip
+if fallback
+  team = fallback[1]
+  scorer = fallback[2].strip
+  time = fallback[3].strip
+  strength = fallback[4].strip
 
-          entry = "#{scorer} (#{time}) [#{strength}]"
-          puts "FALLBACK PARSED: #{entry}"
+  entry = "#{scorer} (#{time}) [#{strength}]"
+  puts "FALLBACK PARSED: #{entry}"
 
-          if team == home_team
-            home_goals << entry
-          else
-            away_goals << entry
-          end
-        else
-          puts "UNMATCHED LINE: #{line}"
-        end
+  if team == home_team
+    home_goals << entry
+  else
+    away_goals << entry
+  end
+else
+  puts "UNMATCHED LINE: #{line}"
+end
       end
     end
 
