@@ -19,16 +19,14 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      if line =~ /(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*EN)?)/
-        team   = $1
-        scorer_and_assists = $2.strip
-        time   = $3.strip
+      if line =~ /(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^]+?)(?:\\s*\\((.*?))?\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/
+        team        = $1
+        scorer_raw  = $2.strip
+        assist_raw  = $3&.strip
+        time        = $4.strip
 
-        scorer = scorer_and_assists.split(',').first.strip
-        assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
-
-        entry = "#{scorer} (#{time})"
-        entry += " assisted by #{assists}" if assists && !assists.empty?
+        entry = "#{scorer_raw} (#{time})"
+        entry += " assisted by #{assist_raw}" if assist_raw && !assist_raw.empty?
 
         puts "PARSED: #{entry}"
 
@@ -37,6 +35,8 @@ def parse_goal_scorers(report_url, home_team, away_team)
         else
           away_goals << entry
         end
+      else
+        puts "UNMATCHED LINE: #{line}"
       end
     end
 
