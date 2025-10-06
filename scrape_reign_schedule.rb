@@ -22,7 +22,7 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      # Token-based parser for malformed goal lines like "2, Ontario, Pinelli 1 3:22 (SH)"
+      # Bulletproof token-based parser for malformed goal lines like "2, Ontario, Pinelli 1 3:22 (SH)"
       tokens = line.split(',').map(&:strip)
 
       if tokens.size == 3 && tokens[2] =~ /\d{1,2}:\d{2}\s*(SH\|PP\|EN)/
