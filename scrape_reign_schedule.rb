@@ -19,49 +19,49 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      match = line.match(/(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
+  match = line.match(/(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
 
-      if match
-        team = match[1]
-        scorer_and_assists = match[2].strip
-        time = match[3].strip
+  if match
+    team = match[1]
+    scorer_and_assists = match[2].strip
+    time = match[3].strip
 
-        scorer = scorer_and_assists.split(',').first.strip
-        assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
+    scorer = scorer_and_assists.split(',').first.strip
+    assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
 
-        entry = "#{scorer} (#{time})"
-        entry += " assisted by #{assists}" if assists && !assists.empty?
+    entry = "#{scorer} (#{time})"
+    entry += " assisted by #{assists}" if assists && !assists.empty?
 
-        puts "PARSED: #{entry}"
+    puts "PARSED: #{entry}"
 
-        if team == home_team
-          home_goals << entry
-        else
-          away_goals << entry
-        end
-      else
-        # Fallback for lines like: "2, Ontario, Pinelli 1   3:22 (SH)"
-      fallback = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^\d]+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
-
-if fallback
-  team = fallback[1]
-  scorer = fallback[2].strip
-  time = fallback[3].strip
-  strength = fallback[4].strip
-
-  entry = "#{scorer} (#{time}) [#{strength}]"
-  puts "FALLBACK PARSED: #{entry}"
-
-  if team == home_team
-    home_goals << entry
-  else
-    away_goals << entry
-  end
-else
-  puts "UNMATCHED LINE: #{line}"
-end
-      end
+    if team == home_team
+      home_goals << entry
+    else
+      away_goals << entry
     end
+  else
+    # Fallback for lines like: "2, Ontario, Pinelli 1   3:22 (SH)"
+    loose_match = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
+
+    if loose_match
+      team = loose_match[1]
+      scorer = loose_match[2].strip
+      time = loose_match[3].strip
+      strength = loose_match[4].strip
+
+      entry = "#{scorer} (#{time}) [#{strength}]"
+      puts "FALLBACK PARSED: #{entry}"
+
+      if team == home_team
+        home_goals << entry
+      else
+        away_goals << entry
+      end
+    else
+      puts "UNMATCHED LINE: #{line}"
+    end
+  end
+end
 
     { home: home_goals, away: away_goals }
   rescue => e
