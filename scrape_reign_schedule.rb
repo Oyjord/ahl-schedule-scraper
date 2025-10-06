@@ -24,8 +24,9 @@ def parse_goal_scorers(report_url, home_team, away_team)
         scorer_and_assists = $2.strip
         time   = $3.strip
 
-        assists = scorer_and_assists[/(.*?)/, 1]
-        scorer  = scorer_and_assists.sub(/.*/, '').strip
+       parts = scorer_and_assists.split(',')
+       scorer = parts[0].strip
+       assists = parts[1..].map(&:strip).join(', ') if parts.length > 1
 
         entry = "#{scorer} (#{time})"
         entry += " assisted by #{assists}" if assists && !assists.empty?
