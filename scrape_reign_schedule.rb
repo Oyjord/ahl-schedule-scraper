@@ -28,13 +28,21 @@ def parse_goal_scorers(report_url, home_team, away_team)
 
       # Bulletproof fallback for malformed goal lines like "2, Ontario, Pinelli 1 3:22(SH)"
       if tokens.size == 3 && tokens[2].include?(':') && tokens[2].include?('(')
-        team = tokens[1]
-        scorer_parts = tokens[2].split(/\s+/)
-        scorer = scorer_parts[0..-3].join(' ')
-        time = scorer_parts[-2]
-        strength = scorer_parts[-1].gsub(/[()]/, '')
+  period_number = tokens[0]
+  team = tokens[1]
+  scorer_parts = tokens[2].split(/\s+/)
+  scorer = scorer_parts[0..-3].join(' ')
+  time = scorer_parts[-2]
+  strength = scorer_parts[-1].gsub(/[()]/, '')
 
-        entry = "#{scorer} (#{time}) [#{strength}]"
+  period_label = case period_number
+                 when "1" then "1st Period"
+                 when "2" then "2nd Period"
+                 when "3" then "3rd Period"
+                 else "#{period_number}th Period"
+                 end
+
+  entry = "#{scorer} (#{period_label} #{time}) [#{strength}]"
         puts "TOKEN PARSED: #{entry}"
 
         if team == home_team
