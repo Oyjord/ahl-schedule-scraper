@@ -60,7 +60,6 @@ lines.each do |line|
       end
     else
       ultra_loose = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
-
       if ultra_loose
         team = ultra_loose[1]
         scorer = ultra_loose[2].strip
