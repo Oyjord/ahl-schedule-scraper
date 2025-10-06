@@ -15,8 +15,6 @@ def parse_goal_scorers(report_url, home_team, away_team)
 
     text  = doc.text
     lines = text.split('.').map(&:strip)
-
-    # Normalize whitespace
     lines.map! { |line| line.gsub(/\u00A0/, ' ').squeeze(' ') }
 
     home_goals, away_goals = [], []
@@ -24,7 +22,7 @@ def parse_goal_scorers(report_url, home_team, away_team)
     lines.each do |line|
       tokens = line.split(',').map(&:strip)
 
-      # Fallback parser for malformed lines like "2, Ontario, Pinelli 1 3:22(SH)"
+      # Fallback parser: "3, Ontario, Chromiak 1 14:44(SH)"
       if tokens.size == 3 && tokens[2].include?(':') && tokens[2].include?('(')
         period_number = tokens[0]
         team = tokens[1]
@@ -37,10 +35,11 @@ def parse_goal_scorers(report_url, home_team, away_team)
                        when "1" then "1st Period"
                        when "2" then "2nd Period"
                        when "3" then "3rd Period"
-                       else "#{period_number}th Period"
+                       else nil
                        end
 
-        entry = "#{scorer} (#{time}) [#{strength}] [#{period_label}]"
+        entry = "#{scorer} (#{period_label} #{time})"
+        entry += " [#{strength}]" if strength && !strength.empty?
 
         if team == home_team
           home_goals << entry
@@ -52,11 +51,11 @@ def parse_goal_scorers(report_url, home_team, away_team)
         next
       end
 
-      # Structured goal line parser
+      # Structured parser: "2nd Period-12, Ontario, Lawrence 1, 9:37"
       match = line.match(/(?:(\d+(?:st|nd|rd|th))\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
 
       if match
-        period_raw = match[1] # e.g. "2nd"
+        period_raw = match[1] # "2nd"
         team = match[2]
         scorer_and_assists = match[3].strip
         time = match[4].strip
@@ -64,9 +63,8 @@ def parse_goal_scorers(report_url, home_team, away_team)
         scorer = scorer_and_assists.split(',').first.strip
         assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
 
-        entry = "#{scorer} (#{time})"
+        entry = "#{scorer} (#{period_raw} Period #{time})"
         entry += " assisted by #{assists}" if assists && !assists.empty?
-        entry += " [#{period_raw} Period]" if period_raw
 
         if team == home_team
           home_goals << entry
