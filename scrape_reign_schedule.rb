@@ -16,34 +16,31 @@ def parse_goal_scorers(report_url, home_team, away_team)
     text  = doc.text
     lines = text.split('.').map(&:strip)
 
-    # Normalize whitespace: replace non-breaking spaces and collapse multiple spaces
+    # Normalize whitespace
     lines.map! { |line| line.gsub(/\u00A0/, ' ').squeeze(' ') }
 
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      puts "DEBUG LINE: #{line.inspect}"
       tokens = line.split(',').map(&:strip)
-      puts "DEBUG TOKENS: #{tokens.inspect}"
 
-      # Bulletproof fallback for malformed goal lines like "2, Ontario, Pinelli 1 3:22(SH)"
+      # Fallback parser for malformed lines like "2, Ontario, Pinelli 1 3:22(SH)"
       if tokens.size == 3 && tokens[2].include?(':') && tokens[2].include?('(')
-  period_number = tokens[0]
-  team = tokens[1]
-  scorer_parts = tokens[2].split(/\s+/)
-  scorer = scorer_parts[0..-3].join(' ')
-  time = scorer_parts[-2]
-  strength = scorer_parts[-1].gsub(/[()]/, '')
+        period_number = tokens[0]
+        team = tokens[1]
+        scorer_parts = tokens[2].split(/\s+/)
+        scorer = scorer_parts[0..-3].join(' ')
+        time = scorer_parts[-2]
+        strength = scorer_parts[-1].gsub(/[()]/, '')
 
-  period_label = case period_number
-                 when "1" then "1st Period"
-                 when "2" then "2nd Period"
-                 when "3" then "3rd Period"
-                 else "#{period_number}th Period"
-                 end
+        period_label = case period_number
+                       when "1" then "1st Period"
+                       when "2" then "2nd Period"
+                       when "3" then "3rd Period"
+                       else "#{period_number}th Period"
+                       end
 
-  entry = "#{scorer} (#{period_label} #{time}) [#{strength}]"
-        puts "TOKEN PARSED: #{entry}"
+        entry = "#{scorer} (#{time}) [#{strength}] [#{period_label}]"
 
         if team == home_team
           home_goals << entry
@@ -55,23 +52,21 @@ def parse_goal_scorers(report_url, home_team, away_team)
         next
       end
 
-      # Original structured goal line parser
-     match = line.match(/(?:(\d+(?:st|nd|rd|th))\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
+      # Structured goal line parser
+      match = line.match(/(?:(\d+(?:st|nd|rd|th))\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
 
-if match
-  period_raw = match[1] # "1st", "2nd", etc.
-  team = match[2]
-  scorer_and_assists = match[3].strip
-  time = match[4].strip
+      if match
+        period_raw = match[1] # e.g. "2nd"
+        team = match[2]
+        scorer_and_assists = match[3].strip
+        time = match[4].strip
 
-  scorer = scorer_and_assists.split(',').first.strip
-  assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
+        scorer = scorer_and_assists.split(',').first.strip
+        assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
 
-  entry = "#{scorer} (#{time})"
-  entry += " assisted by #{assists}" if assists && !assists.empty?
-  entry += " [#{period_raw} Period]" if period_raw
-
-  puts "PARSED: #{entry}"
+        entry = "#{scorer} (#{time})"
+        entry += " assisted by #{assists}" if assists && !assists.empty?
+        entry += " [#{period_raw} Period]" if period_raw
 
         if team == home_team
           home_goals << entry
