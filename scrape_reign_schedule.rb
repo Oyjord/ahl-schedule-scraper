@@ -18,6 +18,8 @@ def parse_goal_scorers(report_url, home_team, away_team)
 
     home_goals, away_goals = [], []
 
+lines.map! { |line| line.gsub(/\u00A0/, ' ').squeeze(' ') }
+    
    lines.each do |line|
   match = line.match(/(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
 
