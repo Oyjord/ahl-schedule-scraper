@@ -26,12 +26,10 @@ def parse_goal_scorers(report_url, home_team, away_team)
       tokens = line.split(',').map(&:strip)
       puts "DEBUG TOKENS: #{tokens.inspect}"
 
-      # Bulletproof token-based parser for malformed goal lines like "2, Ontario, Pinelli 1 3:22 (SH)"
-      if tokens.size == 3 && tokens[2] =~ /\d{1,2}:\d{2}\s*(SH\|PP\|EN)/
+      # Bulletproof fallback for malformed goal lines like "2, Ontario, Pinelli 1 3:22(SH)"
+      if tokens.size == 3 && tokens[2].include?(':') && tokens[2].include?('(')
         team = tokens[1]
-        scorer_and_time = tokens[2]
-
-        scorer_parts = scorer_and_time.split(/\s+/)
+        scorer_parts = tokens[2].split(/\s+/)
         scorer = scorer_parts[0..-3].join(' ')
         time = scorer_parts[-2]
         strength = scorer_parts[-1].gsub(/[()]/, '')
