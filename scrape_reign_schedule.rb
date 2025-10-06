@@ -22,20 +22,27 @@ def parse_goal_scorers(report_url, home_team, away_team)
     home_goals, away_goals = [], []
 
     lines.each do |line|
-      # Explicit parser for scorer + time + strength
-      if line =~ /\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([A-Za-z\-'\s]+\d)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/
-        team     = $1
-        scorer   = $2.strip
-        time     = $3.strip
-        strength = $4.strip
+      # Token-based parser for malformed goal lines like "2, Ontario, Pinelli 1 3:22 (SH)"
+      tokens = line.split(',').map(&:strip)
+
+      if tokens.size == 3 && tokens[2] =~ /\d{1,2}:\d{2}\s*(SH\|PP\|EN)/
+        team = tokens[1]
+        scorer_and_time = tokens[2]
+
+        scorer_parts = scorer_and_time.split(/\s+/)
+        scorer = scorer_parts[0..-3].join(' ')
+        time = scorer_parts[-2]
+        strength = scorer_parts[-1].gsub(/[()]/, '')
 
         entry = "#{scorer} (#{time}) [#{strength}]"
-        puts "EXPLICIT PARSED: #{entry}"
+        puts "TOKEN PARSED: #{entry}"
 
         if team == home_team
           home_goals << entry
-        else
+        elsif team == away_team
           away_goals << entry
+        else
+          puts "⚠️ Unknown team: #{team}"
         end
         next
       end
