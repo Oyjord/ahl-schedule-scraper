@@ -48,20 +48,22 @@ def parse_goal_scorers(report_url, home_team, away_team)
       end
 
       # Original structured goal line parser
-      match = line.match(/(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
+     match = line.match(/(?:(\d+(?:st|nd|rd|th))\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
 
-      if match
-        team = match[1]
-        scorer_and_assists = match[2].strip
-        time = match[3].strip
+if match
+  period_raw = match[1] # "1st", "2nd", etc.
+  team = match[2]
+  scorer_and_assists = match[3].strip
+  time = match[4].strip
 
-        scorer = scorer_and_assists.split(',').first.strip
-        assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
+  scorer = scorer_and_assists.split(',').first.strip
+  assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
 
-        entry = "#{scorer} (#{time})"
-        entry += " assisted by #{assists}" if assists && !assists.empty?
+  entry = "#{scorer} (#{time})"
+  entry += " assisted by #{assists}" if assists && !assists.empty?
+  entry += " [#{period_raw} Period]" if period_raw
 
-        puts "PARSED: #{entry}"
+  puts "PARSED: #{entry}"
 
         if team == home_team
           home_goals << entry
