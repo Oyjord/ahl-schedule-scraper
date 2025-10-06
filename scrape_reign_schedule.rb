@@ -21,37 +21,46 @@ def parse_goal_scorers(report_url, home_team, away_team)
     lines.map! { |line| line.gsub(/\u00A0/, ' ').squeeze(' ') }
 
 lines.each do |line|
-  match = line.match(/(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
+  if line =~ /(SH\|PP\|EN)/ && line =~ /\d{1,2}:\d{2}/
+    tokens = line.split(',')
+    team = tokens[1]&.strip
+    rest = tokens[2]&.strip
 
-  if match
-    team = match[1]
-    scorer_and_assists = match[2].strip
-    time = match[3].strip
-
-    scorer = scorer_and_assists.split(',').first.strip
-    assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
-
-    entry = "#{scorer} (#{time})"
-    entry += " assisted by #{assists}" if assists && !assists.empty?
-
-    puts "PARSED: #{entry}"
-
-    if team == home_team
-      home_goals << entry
-    else
-      away_goals << entry
-    end
-  else
-    loose_match = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^\d,]+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
-
-    if loose_match
-      team = loose_match[1]
-      scorer = loose_match[2].strip
-      time = loose_match[3].strip
-      strength = loose_match[4].strip
+    if team && rest
+      parts = rest.split(/\s+/)
+      scorer = parts[0..-3].join(' ')
+      time = parts[-2]
+      strength = parts[-1].gsub(/[()]/, '')
 
       entry = "#{scorer} (#{time}) [#{strength}]"
-      puts "FALLBACK PARSED: #{entry}"
+      puts "TOKEN PARSED: #{entry}"
+
+      if team == home_team
+        home_goals << entry
+      elsif team == away_team
+        away_goals << entry
+      else
+        puts "⚠️ Unknown team: #{team}"
+      end
+    else
+      puts "UNMATCHED LINE: #{line}"
+    end
+  else
+    # fallback to original regex
+    match = line.match(/(?:\d+(?:st|nd|rd|th)\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
+
+    if match
+      team = match[1]
+      scorer_and_assists = match[2].strip
+      time = match[3].strip
+
+      scorer = scorer_and_assists.split(',').first.strip
+      assists = scorer_and_assists.split(',')[1..]&.map(&:strip)&.join(', ')
+
+      entry = "#{scorer} (#{time})"
+      entry += " assisted by #{assists}" if assists && !assists.empty?
+
+      puts "PARSED: #{entry}"
 
       if team == home_team
         home_goals << entry
@@ -59,28 +68,12 @@ lines.each do |line|
         away_goals << entry
       end
     else
-      ultra_loose = line.match(/(?:\d+(?:st|nd|rd|th)?\s*Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*(.+?)\s+(\d{1,2}:\d{2})\s*(SH\|PP\|EN)/)
-      if ultra_loose
-        team = ultra_loose[1]
-        scorer = ultra_loose[2].strip
-        time = ultra_loose[3].strip
-        strength = ultra_loose[4].strip
-
-        entry = "#{scorer} (#{time}) [#{strength}]"
-        puts "ULTRA PARSED: #{entry}"
-
-        if team == home_team
-          home_goals << entry
-        else
-          away_goals << entry
-        end
-      else
-        puts "UNMATCHED LINE: #{line}"
-      end
+      puts "UNMATCHED LINE: #{line}"
     end
   end
 end
 
+  
     { home: home_goals, away: away_goals }
   rescue => e
     puts "⚠️ Failed to parse scorers from #{report_url}: #{e}"
