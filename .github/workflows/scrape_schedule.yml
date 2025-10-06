@@ -3,7 +3,7 @@ name: Scrape Reign Schedule
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"   # hourly
+    - cron: "1 * * * *"   # hourly
 
 jobs:
   build:
@@ -40,3 +40,11 @@ jobs:
         with:
           name: reign-schedule
           path: reign_schedule.json
+
+      - name: Commit updated schedule
+        run: |
+          git config --global user.name "ReignBot"
+          git config --global user.email "reignbot@users.noreply.github.com"
+          git add reign_schedule.json
+          git commit -m "Update schedule with enriched goal data" || echo "No changes to commit"
+          git push
