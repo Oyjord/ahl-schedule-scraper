@@ -158,16 +158,28 @@
   {
     "game_id": 1027778,
     "date": "Fri, Oct 10",
-    "status": "09:11 3rd",
+    "status": "Final OT",
     "home_team": "Ontario",
-    "home_score": 3,
+    "home_score": 4,
     "away_team": "Tucson",
-    "away_score": 3,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1027778",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027778&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027778&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027778",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Lee 1 (Thomas) ( Period 6:21)",
+      "Jämsen 1 (Portillo) ( Period 19:38)",
+      "Thomas 1 (Pinelli) ( Period 15:33)"
+    ],
+    "away_goals": [
+      "McCartney 1 (Hebig (41st Period 0:35) assisted by Poganski)",
+      "Walker 1 (Hebig (2nd Period 5:59) assisted by McCartney)",
+      "Allard 1 (Connauton (3rd Period 2:09) assisted by Matikka)",
+      "Rooney 1 (Walker ( Period 19:38) assisted by Duda)",
+      "Walker 2 (Perunovich) ( Period 0:51)"
+    ]
   },
   {
     "game_id": 1027808,
