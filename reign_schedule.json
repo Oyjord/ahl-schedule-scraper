@@ -604,12 +604,14 @@
   {
     "game_id": 1027800,
     "date": "Sun, Oct 12",
-    "status": "3:00 pm PDT",
+    "status": "13:38 1st",
     "home_team": "Ontario",
     "home_score": 0,
     "away_team": "Tucson",
-    "away_score": 0,
+    "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1027800",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027800&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027800&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027800",
     "season_type": "regular"
   },
