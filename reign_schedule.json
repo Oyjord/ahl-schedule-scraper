@@ -604,16 +604,25 @@
   {
     "game_id": 1027800,
     "date": "Sun, Oct 12",
-    "status": "13:38 2nd",
+    "status": "Unofficial Final",
     "home_team": "Ontario",
-    "home_score": 1,
+    "home_score": 4,
     "away_team": "Tucson",
     "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1027800",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027800&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027800&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027800",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Thomas 2 (Connors ( Period 16:14) assisted by Millar)",
+      "Hicketts 1 (Lawrence ( Period 9:33) assisted by Doty)",
+      "Chromiak 1 (Hicketts (3rd Period 5:12) assisted by Lee)"
+    ],
+    "away_goals": [
+      "Rooney 2 (But (41st Period 6:21) assisted by Walker)",
+      "Hebig 1 (McCartney (2nd Period 1:03) assisted by Kunc)"
+    ]
   },
   {
     "game_id": 1027830,
