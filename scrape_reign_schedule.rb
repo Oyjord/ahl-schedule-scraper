@@ -23,33 +23,35 @@ def parse_goal_scorers(report_url, home_team, away_team)
       tokens = line.split(',').map(&:strip)
 
       # Fallback parser: "3, Ontario, Chromiak 1 14:44(SH)"
-      if tokens.size == 3 && tokens[2].include?(':') && tokens[2].include?('(')
-        period_number = tokens[0]
-        team = tokens[1]
-        scorer_parts = tokens[2].split(/\s+/)
-        scorer = scorer_parts[0..-3].join(' ')
-        time = scorer_parts[-2]
-        strength = scorer_parts[-1].gsub(/[()]/, '')
+      if tokens.size == 3 && tokens[2] =~ /\d{1,2}:\d{2}/
+  period_number = tokens[0]
+  team = tokens[1]
+  scorer_parts = tokens[2].split(/\s+/)
+  scorer = scorer_parts[0..-3].join(' ')
+  time = scorer_parts[-2]
+  strength = scorer_parts[-1].gsub(/[()]/, '') if scorer_parts[-1]&.include?('(')
 
-        period_label = case period_number
-                       when "1" then "1st Period"
-                       when "2" then "2nd Period"
-                       when "3" then "3rd Period"
-                       else nil
-                       end
+  period_label = case period_number
+                 when "1" then "1st Period"
+                 when "2" then "2nd Period"
+                 when "3" then "3rd Period"
+                 when "OT" then "OT Period"
+                 when "SO" then "Shootout"
+                 else nil
+                 end
 
-        entry = "#{scorer} (#{period_label} #{time})"
-        entry += " [#{strength}]" if strength && !strength.empty?
+  entry = "#{scorer} (#{period_label} #{time})"
+  entry += " [#{strength}]" if strength && !strength.empty?
 
-        if team == home_team
-          home_goals << entry
-        elsif team == away_team
-          away_goals << entry
-        else
-          puts "⚠️ Unknown team: #{team}"
-        end
-        next
-      end
+  if team == home_team
+    home_goals << entry
+  elsif team == away_team
+    away_goals << entry
+  else
+    puts "⚠️ Unknown team: #{team}"
+  end
+  next
+end
 
       # Structured parser with optional assists
       match = line.match(/(?:(\d+(?:st|nd|rd|th))\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+)(?:,\s*(.*?))?\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
