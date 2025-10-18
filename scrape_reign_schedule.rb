@@ -23,25 +23,20 @@ def parse_goal_scorers(report_url, home_team, away_team)
       tokens = line.split(',').map(&:strip)
 
       # Fallback parser: "3, Ontario, Chromiak 1 14:44(SH)"
-      if tokens.size == 3 && tokens[2] =~ /\d{1,2}:\d{2}/
+     if tokens.size == 3 && tokens[2] =~ /\d{1,2}:\d{2}/
   period_number = tokens[0]
   team = tokens[1]
-  scorer_parts = tokens[2].split(/\s+/)
-  scorer = scorer_parts[0..-3].join(' ')
-  time = scorer_parts[-2]
-  strength = scorer_parts[-1].gsub(/[()]/, '') if scorer_parts[-1]&.include?('(')
+  parts = tokens[2].split(/\s+/)
 
-  period_label = case period_number
-                 when "1" then "1st Period"
-                 when "2" then "2nd Period"
-                 when "3" then "3rd Period"
-                 when "OT" then "OT Period"
-                 when "SO" then "Shootout"
-                 else nil
-                 end
-
-  entry = "#{scorer} (#{period_label} #{time})"
-  entry += " [#{strength}]" if strength && !strength.empty?
+  # Expecting: "Salin 1 18:01" or "Salin 1 18:01(SH)"
+  if parts.size >= 3
+    scorer = parts[0..-3].join(' ')
+    # No assists in this format — assume unassisted
+    entry = "#{scorer} (unassisted)"
+  else
+    puts "⚠️ Unexpected format in fallback goal line: #{tokens[2]}"
+    next
+  end
 
   if team == home_team
     home_goals << entry
@@ -57,23 +52,24 @@ end
       match = line.match(/(?:(\d+(?:st|nd|rd|th))\s+Period-)?\d+,\s*(#{Regexp.escape(home_team)}|#{Regexp.escape(away_team)}),\s*([^,]+)(?:,\s*(.*?))?\s*,\s*(\d{1,2}:\d{2}(?:\s*(?:EN|SH|PP))?)/)
 
       if match
-        period_raw = match[1]
-        team = match[2]
-        scorer = match[3].strip
-        assists_raw = match[4]&.strip
-        time = match[5].strip
+  team = match[2]
+  scorer = match[3].strip
+  assists_raw = match[4]&.strip
 
-        entry = "#{scorer} (#{period_raw} Period #{time})"
-        entry += " assisted by #{assists_raw}" if assists_raw && !assists_raw.empty?
+  entry = if assists_raw && !assists_raw.empty?
+            "#{scorer} (#{assists_raw})"
+          else
+            "#{scorer} (unassisted)"
+          end
 
-        if team == home_team
-          home_goals << entry
-        else
-          away_goals << entry
-        end
-      else
-        puts "UNMATCHED LINE: #{line}"
-      end
+  if team == home_team
+    home_goals << entry
+  else
+    away_goals << entry
+  end
+else
+  puts "UNMATCHED LINE: #{line}"
+end
     end
 
     { home: home_goals, away: away_goals }
