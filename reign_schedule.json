@@ -184,11 +184,11 @@
   {
     "game_id": 1027808,
     "date": "Fri, Oct 17",
-    "status": "End of 2nd",
+    "status": "00:01 3rd",
     "home_team": "Ontario",
     "home_score": 0,
     "away_team": "Henderson",
-    "away_score": 0,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1027808",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027808&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027808&lang_id=1",
