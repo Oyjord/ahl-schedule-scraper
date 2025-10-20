@@ -638,16 +638,25 @@
   {
     "game_id": 1027830,
     "date": "Sun, Oct 19",
-    "status": "End of 2nd",
+    "status": "Final",
     "home_team": "Ontario",
-    "home_score": 1,
+    "home_score": 3,
     "away_team": "Colorado",
     "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1027830",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027830&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027830&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027830",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Chromiak 2 (Hicketts (Gawdin))",
+      "Bolduc 1 (Hicketts (Connors))",
+      "Bolduc 2 (Jämsen) (unassisted)"
+    ],
+    "away_goals": [
+      "Ivan 1 (Polin) (unassisted)",
+      "Gushchin 5 (Aamodt (Ahcan))"
+    ]
   },
   {
     "game_id": 1027866,
