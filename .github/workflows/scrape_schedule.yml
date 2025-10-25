@@ -3,7 +3,7 @@ name: Scrape Reign Schedule
 on:
   workflow_dispatch:
   schedule:
-     - cron: "0 */6 * * *"   # hourly
+     - cron: "0 0 30 2 *"   # hourly
 
 jobs:
   build:
