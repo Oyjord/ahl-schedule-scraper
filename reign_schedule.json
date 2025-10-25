@@ -206,12 +206,14 @@
   {
     "game_id": 1027839,
     "date": "Fri, Oct 24",
-    "status": "7:00 pm PDT",
+    "status": "09:17 1st",
     "home_team": "Abbotsford",
     "home_score": 0,
     "away_team": "Ontario",
-    "away_score": 0,
+    "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1027839",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027839&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027839&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027839",
     "season_type": "regular"
   },
