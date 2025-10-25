@@ -206,16 +206,27 @@
   {
     "game_id": 1027839,
     "date": "Fri, Oct 24",
-    "status": "05:21 3rd",
+    "status": "Unofficial Final",
     "home_team": "Abbotsford",
     "home_score": 2,
     "away_team": "Ontario",
-    "away_score": 4,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1027839",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027839&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027839&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027839",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Berard 2 (Kudryavtsev (Kravtsov))",
+      "MacEachern 2 (Wouters (Berard))"
+    ],
+    "away_goals": [
+      "Lee 2 (Hughes (Bolduc))",
+      "Ward 1 (Gawdin) (unassisted)",
+      "Ward (unassisted)",
+      "Lee 3 (Pinelli (Ward))",
+      "Gawdin (unassisted)"
+    ]
   },
   {
     "game_id": 1027890,
