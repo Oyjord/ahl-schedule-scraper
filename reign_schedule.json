@@ -674,16 +674,27 @@
   {
     "game_id": 1027866,
     "date": "Sun, Oct 26",
-    "status": "End of 2nd",
+    "status": "Final",
     "home_team": "Abbotsford",
-    "home_score": 1,
+    "home_score": 2,
     "away_team": "Ontario",
-    "away_score": 4,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1027866",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027866&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027866&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027866",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Alriksson 1 (Schuldt (Willander))",
+      "Mynio 1 (Wouters (Kambeitz))"
+    ],
+    "away_goals": [
+      "Guttman 1 (Kirsanov (Thomas))",
+      "Ward 3 (Gawdin) (unassisted)",
+      "Bolduc 3 (Ward (Lee))",
+      "Pinelli 2 (Kirsanov (Guttman))",
+      "Wright 1 (Thomas) (unassisted)"
+    ]
   },
   {
     "game_id": 1028957,
