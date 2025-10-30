@@ -975,7 +975,7 @@
   {
     "game_id": 1027879,
     "date": "Wed, Oct 29",
-    "status": "05:58 3rd",
+    "status": "Unofficial Final",
     "home_team": "Henderson",
     "home_score": 6,
     "away_team": "Ontario",
@@ -984,6 +984,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027879&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027879&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027879",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Uchacz 1 (Megna (McLain))",
+      "Hemmerling 2 (Laczynski (Davies))",
+      "Uronen 2 (Hallum (Kmec))",
+      "Coghlan 2 (Bowman (Brabenec))",
+      "Bowman 4 (Lavoie (Brabenec))",
+      "Bowman 5 (Lavoie (Coghlan))"
+    ],
+    "away_goals": [
+      "Jämsen 2 (Hughes) (unassisted)",
+      "Wright 2 (Lee (Connors))"
+    ]
   }
 ]
