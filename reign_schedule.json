@@ -231,11 +231,11 @@
   {
     "game_id": 1027890,
     "date": "Fri, Oct 31",
-    "status": "13:01 2nd",
+    "status": "End of 2nd",
     "home_team": "San Jose",
     "home_score": 1,
     "away_team": "Ontario",
-    "away_score": 1,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1027890",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027890&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027890&lang_id=1",
