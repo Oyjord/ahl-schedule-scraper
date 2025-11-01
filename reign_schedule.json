@@ -231,7 +231,7 @@
   {
     "game_id": 1027890,
     "date": "Fri, Oct 31",
-    "status": "01:56 3rd",
+    "status": "Final",
     "home_team": "San Jose",
     "home_score": 1,
     "away_team": "Ontario",
@@ -240,7 +240,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027890&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027890&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027890",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Wahlstrom 1 (White (Cagnoni))"
+    ],
+    "away_goals": [
+      "Ward 4 (Chromiak (Gawdin))",
+      "Jämsen 3 (Ziemmer (Booth))",
+      "Bolduc (unassisted)",
+      "Hughes 1 (Ziemmer (Booth))",
+      "Dvořák 1 (Ward (Bolduc))",
+      "Connors (unassisted)"
+    ]
   },
   {
     "game_id": 1028525,
