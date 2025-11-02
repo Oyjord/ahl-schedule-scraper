@@ -472,16 +472,26 @@
   {
     "game_id": 1027904,
     "date": "Sat, Nov 1",
-    "status": "12:15 2nd",
+    "status": "Unofficial Final",
     "home_team": "San Jose",
-    "home_score": 2,
+    "home_score": 4,
     "away_team": "Ontario",
-    "away_score": 0,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1027904",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027904&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027904&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027904",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Thompson 1 (Cardwell (Carlsson))",
+      "Ostapchuk 2 (Huntington) (unassisted)",
+      "Musty 2 (Lund (Cagnoni))",
+      "Regenda 1 (Bystedt (Halttunen))"
+    ],
+    "away_goals": [
+      "Chromiak 3 (Gawdin (Hicketts))",
+      "Ward 5 (Pinelli (Guttman))"
+    ]
   },
   {
     "game_id": 1027992,
