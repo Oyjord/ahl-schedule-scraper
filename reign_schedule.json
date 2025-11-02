@@ -472,7 +472,7 @@
   {
     "game_id": 1027904,
     "date": "Sat, Nov 1",
-    "status": "Unofficial Final",
+    "status": "Final",
     "home_team": "San Jose",
     "home_score": 4,
     "away_team": "Ontario",
@@ -485,8 +485,8 @@
     "home_goals": [
       "Thompson 1 (Cardwell (Carlsson))",
       "Ostapchuk 2 (Huntington) (unassisted)",
-      "Musty 2 (Lund (Cagnoni))",
-      "Regenda 1 (Bystedt (Halttunen))"
+      "Musty 2 (White (Lund))",
+      "Regenda 1 (Bystedt) (unassisted)"
     ],
     "away_goals": [
       "Chromiak 3 (Gawdin (Hicketts))",
