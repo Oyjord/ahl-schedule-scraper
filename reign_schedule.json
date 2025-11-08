@@ -146,7 +146,7 @@
   {
     "game_id": 1027934,
     "date": "Fri, Nov 7",
-    "status": "00:00 3rd",
+    "status": "Final",
     "home_team": "San Diego",
     "home_score": 6,
     "away_team": "Ontario",
@@ -155,7 +155,21 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027934&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027934&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027934",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Caulfield 4 (Washe) (unassisted)",
+      "Myatovic 2 (Carpenter) (unassisted)",
+      "Gaucher 1 (Caulfield (Brouillard))",
+      "Washe 4 (Myatovic (Caulfield))",
+      "Bailey (unassisted)",
+      "Washe 5 (Caulfield (Solberg))"
+    ],
+    "away_goals": [
+      "Chromiak 4 (Thomas (Jämsen))",
+      "Connors 2 (Chromiak (Hicketts))",
+      "Hicketts 2 (Chromiak (Thomas))",
+      "Chromiak (unassisted)"
+    ]
   },
   {
     "game_id": 1027778,
