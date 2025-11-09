@@ -536,7 +536,7 @@
   {
     "game_id": 1027948,
     "date": "Sat, Nov 8",
-    "status": "02:55 OT",
+    "status": "Final OT",
     "home_team": "Ontario",
     "home_score": 4,
     "away_team": "San Diego",
@@ -545,7 +545,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027948&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027948&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027948",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Gawdin 2 (Lee) (unassisted)",
+      "Gawdin 3 (Guttman (Dvořák))",
+      "Jämsen 4 (Ziemmer (Hughes))",
+      "Burroughs 1 (Guttman (Hicketts))"
+    ],
+    "away_goals": [
+      "Myšák 2 (Pastujov (McKeown))",
+      "Warren (unassisted)",
+      "Washe 6 (Phillips (Carpenter))"
+    ]
   },
   {
     "game_id": 1028208,
