@@ -536,12 +536,14 @@
   {
     "game_id": 1027948,
     "date": "Sat, Nov 8",
-    "status": "6:00 pm PST",
+    "status": "15:16 2nd",
     "home_team": "Ontario",
-    "home_score": 0,
+    "home_score": 2,
     "away_team": "San Diego",
     "away_score": 0,
     "game_center_url": "https://theahl.com/stats/game-center/1027948",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027948&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027948&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027948",
     "season_type": "regular"
   },
