@@ -849,16 +849,26 @@
   {
     "game_id": 1027958,
     "date": "Tue, Nov 11",
-    "status": "10:21 3rd",
+    "status": "Unofficial Final",
     "home_team": "Calgary",
     "home_score": 1,
     "away_team": "Ontario",
-    "away_score": 4,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1027958",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1027958&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1027958&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1027958",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Hunt 5 (Kerins (Brzustewicz))"
+    ],
+    "away_goals": [
+      "Connors 3 (Wright (Pinelli))",
+      "Guttman 2 (Gawdin (Lee))",
+      "Wright 3 (Hicketts (Connors))",
+      "Ward 7 (Thomas) (unassisted)",
+      "Ziemmer 1 (Jämsen (Hughes))"
+    ]
   },
   {
     "game_id": 1027918,
