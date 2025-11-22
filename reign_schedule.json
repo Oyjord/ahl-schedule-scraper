@@ -122,11 +122,11 @@
   {
     "game_id": 1028016,
     "date": "Fri, Nov 21",
-    "status": "07:47 3rd",
+    "status": "00:00 3rd",
     "home_team": "Ontario",
     "home_score": 3,
     "away_team": "Bakersfield",
-    "away_score": 0,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028016",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028016&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028016&lang_id=1",
