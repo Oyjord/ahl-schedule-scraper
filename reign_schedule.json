@@ -548,7 +548,7 @@
   {
     "game_id": 1028022,
     "date": "Sat, Nov 22",
-    "status": "02:07 OT",
+    "status": "Final OT",
     "home_team": "Bakersfield",
     "home_score": 2,
     "away_team": "Ontario",
@@ -557,7 +557,16 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028022&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028022&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028022",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Stillman 2 (Howard (Samanski))",
+      "Jones (unassisted)"
+    ],
+    "away_goals": [
+      "Ward 9 (Chromiak (Burroughs))",
+      "Guttman (unassisted)",
+      "Wright (unassisted)"
+    ]
   },
   {
     "game_id": 1027948,
