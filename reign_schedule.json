@@ -717,16 +717,25 @@
   {
     "game_id": 1028081,
     "date": "Sun, Nov 30",
-    "status": "05:18 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 1,
     "away_team": "Texas",
-    "away_score": 2,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028081",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028081&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028081&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028081",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Guttman 5 (Gawdin) (unassisted)"
+    ],
+    "away_goals": [
+      "Shlaine 5 (Hughes (White))",
+      "Shlaine 6 (Hughes (Tuomaala))",
+      "Lind (unassisted)",
+      "Seminoff 4 (Shlaine (Karow))"
+    ]
   },
   {
     "game_id": 1027800,
