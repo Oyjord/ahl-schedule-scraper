@@ -380,7 +380,7 @@
   {
     "game_id": 1028113,
     "date": "Sat, Dec 6",
-    "status": "10:32 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 6,
     "away_team": "Calgary",
@@ -389,7 +389,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028113&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028113&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028113",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Kirsanov 1 (Lee (Connors))",
+      "Lee 7 (Guttman (Bolduc))",
+      "Chromiak 7 (Ward (Bolduc))",
+      "Kirsanov 2 (Bolduc (Pinelli))",
+      "Alexandrov 4 (Ziemmer (Burroughs))",
+      "Pinelli 3 (Chromiak) (unassisted)"
+    ],
+    "away_goals": [
+
+    ]
   },
   {
     "game_id": 1028501,
