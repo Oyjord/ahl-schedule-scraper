@@ -634,16 +634,23 @@
   {
     "game_id": 1028121,
     "date": "Sun, Dec 7",
-    "status": "End of 1st",
+    "status": "Final OT",
     "home_team": "Ontario",
-    "home_score": 0,
+    "home_score": 2,
     "away_team": "Calgary",
-    "away_score": 0,
+    "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028121",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028121&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028121&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028121",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Lee 8 (Connors (Wright))",
+      "Hicketts 3 (Guttman (Booth))"
+    ],
+    "away_goals": [
+      "Suniev 5 (Miromanov (Morton))"
+    ]
   },
   {
     "game_id": 1028455,
