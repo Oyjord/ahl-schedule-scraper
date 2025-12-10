@@ -906,7 +906,7 @@
   {
     "game_id": 1028127,
     "date": "Tue, Dec 9",
-    "status": "00:00 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 6,
     "away_team": "Texas",
@@ -915,7 +915,19 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028127&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028127&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028127",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Alexandrov 5 (Guttman (Bolduc))",
+      "Connors 5 (Wright (Lee))",
+      "Alexandrov 6 (Booth (Ziemmer))",
+      "Connors 6 (Wright (Booth))",
+      "Pinelli 4 (Ward (Gawdin))"
+    ],
+    "away_goals": [
+      "Stranges 4 (Bertucci (Lind))",
+      "Shlaine 8 (Bertucci) (unassisted)",
+      "Scott 5 (Wheatcroft (Lind))"
+    ]
   },
   {
     "game_id": 1028325,
