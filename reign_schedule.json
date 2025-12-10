@@ -906,12 +906,14 @@
   {
     "game_id": 1028127,
     "date": "Tue, Dec 9",
-    "status": "7:00 pm PST",
+    "status": "03:00 1st",
     "home_team": "Ontario",
-    "home_score": 0,
+    "home_score": 2,
     "away_team": "Texas",
     "away_score": 0,
     "game_center_url": "https://theahl.com/stats/game-center/1028127",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028127&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028127&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028127",
     "season_type": "regular"
   },
