@@ -26,7 +26,7 @@
   {
     "game_id": 1028139,
     "date": "Fri, Dec 12",
-    "status": "02:26 3rd",
+    "status": "Unofficial Final",
     "home_team": "Colorado",
     "home_score": 2,
     "away_team": "Ontario",
@@ -35,7 +35,16 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028139&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028139&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028139",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Nielsen 11 (Tynan (Aamodt))",
+      "Megna 10 (Felhaber (Barré-Boulet))"
+    ],
+    "away_goals": [
+      "Ward (unassisted)",
+      "Gawdin 4 (Bolduc (Guttman))",
+      "Gawdin 5 (Bolduc (Lee))"
+    ]
   },
   {
     "game_id": 1028468,
