@@ -355,7 +355,7 @@
   {
     "game_id": 1028151,
     "date": "Sat, Dec 13",
-    "status": "05:26 3rd",
+    "status": "Unofficial Final",
     "home_team": "Colorado",
     "home_score": 6,
     "away_team": "Ontario",
@@ -364,7 +364,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028151&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028151&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028151",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Megna 11 (Nielsen (Attard))",
+      "Nielsen 12 (Megna (Ahcan))",
+      "Barré-Boulet 7 (Attard (Jedlička))",
+      "Makar 6 (Barré-Boulet (Ahcan))",
+      "Megna 12 (Felhaber (Barré-Boulet))",
+      "Barré-Boulet 8 (Megna (Attard))"
+    ],
+    "away_goals": [
+      "Gawdin 6 (Hughes) (unassisted)"
+    ]
   },
   {
     "game_id": 1028197,
