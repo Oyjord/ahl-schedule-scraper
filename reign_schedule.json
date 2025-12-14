@@ -355,7 +355,7 @@
   {
     "game_id": 1028151,
     "date": "Sat, Dec 13",
-    "status": "Unofficial Final",
+    "status": "Final",
     "home_team": "Colorado",
     "home_score": 6,
     "away_team": "Ontario",
@@ -370,11 +370,11 @@
       "Nielsen 12 (Megna (Ahcan))",
       "Barré-Boulet 7 (Attard (Jedlička))",
       "Makar 6 (Barré-Boulet (Ahcan))",
-      "Megna 12 (Felhaber (Barré-Boulet))",
+      "Megna 12 (Felhaber (Attard))",
       "Barré-Boulet 8 (Megna (Attard))"
     ],
     "away_goals": [
-      "Gawdin 6 (Hughes) (unassisted)"
+      "Gawdin 6 (Hughes (Guttman))"
     ]
   },
   {
