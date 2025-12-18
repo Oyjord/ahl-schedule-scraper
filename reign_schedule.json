@@ -1025,12 +1025,14 @@
   {
     "game_id": 1028171,
     "date": "Wed, Dec 17",
-    "status": "6:30 pm PST",
+    "status": "17:06 2nd",
     "home_team": "Bakersfield",
     "home_score": 0,
     "away_team": "Ontario",
-    "away_score": 0,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028171",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028171&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028171&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028171",
     "season_type": "regular"
   },
