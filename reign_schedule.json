@@ -380,16 +380,26 @@
   {
     "game_id": 1028197,
     "date": "Sat, Dec 20",
-    "status": "04:21 3rd",
+    "status": "Unofficial Final",
     "home_team": "Ontario",
-    "home_score": 2,
+    "home_score": 3,
     "away_team": "San Jose",
-    "away_score": 3,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028197",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028197&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028197&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028197",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Chromiak 11 (Lee) (unassisted)",
+      "Lee 10 (Gawdin) (unassisted)",
+      "Lee 11 (Hicketts (Alexandrov))"
+    ],
+    "away_goals": [
+      "Afanasyev 3 (Carlsson (White))",
+      "Afanasyev 4 (Huntington (Halttunen))",
+      "Wahlstrom 8 (Musty (Cagnoni))"
+    ]
   },
   {
     "game_id": 1028220,
