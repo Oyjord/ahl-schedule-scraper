@@ -380,12 +380,14 @@
   {
     "game_id": 1028197,
     "date": "Sat, Dec 20",
-    "status": "6:00 pm PST",
+    "status": "End of 1st",
     "home_team": "Ontario",
-    "home_score": 0,
+    "home_score": 2,
     "away_team": "San Jose",
-    "away_score": 0,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028197",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028197&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028197&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028197",
     "season_type": "regular"
   },
