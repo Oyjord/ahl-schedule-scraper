@@ -658,16 +658,29 @@
   {
     "game_id": 1028208,
     "date": "Sun, Dec 21",
-    "status": "End of 1st",
+    "status": "Final",
     "home_team": "Ontario",
-    "home_score": 1,
+    "home_score": 3,
     "away_team": "San Jose",
-    "away_score": 3,
+    "away_score": 6,
     "game_center_url": "https://theahl.com/stats/game-center/1028208",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028208&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028208&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028208",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Wright 6 (Ziemmer (Alexandrov))",
+      "Ziemmer 2 (Gawdin (Booth))",
+      "Hughes 2 (Wright) (unassisted)"
+    ],
+    "away_goals": [
+      "Huntington 5 (Havelid (Afanasyev))",
+      "Halttunen 6 (Regenda (Giles))",
+      "Bowers 1 (Wahlstrom (Huntington))",
+      "Bystedt (unassisted)",
+      "Giles 5 (Thompson (Huntington))",
+      "Regenda 4 (Carlsson (Lund))"
+    ]
   },
   {
     "game_id": 1028121,
