@@ -955,16 +955,24 @@
   {
     "game_id": 1028236,
     "date": "Tue, Dec 30",
-    "status": "04:59 3rd",
+    "status": "Unofficial Final",
     "home_team": "Henderson",
     "home_score": 2,
     "away_team": "Ontario",
-    "away_score": 1,
+    "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028236",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028236&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028236&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028236",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "McLain 6 (Uchacz (Davies))",
+      "Hemmerling 7 (Coghlan (Laczynski))"
+    ],
+    "away_goals": [
+      "Ward 12 (Guttman (Alexandrov))",
+      "Lee 13 (Alexandrov (Gawdin))"
+    ]
   },
   {
     "game_id": 1028127,
