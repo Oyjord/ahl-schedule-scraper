@@ -1095,16 +1095,29 @@
   {
     "game_id": 1028247,
     "date": "Wed, Dec 31",
-    "status": "13:19 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 4,
     "away_team": "San Jose",
-    "away_score": 4,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1028247",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028247&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028247&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028247",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Guttman 6 (Gawdin (Alexandrov))",
+      "Connors 7 (Hughes (Ziemmer))",
+      "Guttman 7 (Ward) (unassisted)",
+      "Rego 1 (Guttman (Alexandrov))"
+    ],
+    "away_goals": [
+      "Wahlstrom 9 (Halttunen (White))",
+      "Cardwell 4 (Musty (Huntington))",
+      "Bystedt 9 (unassisted)",
+      "Afanasyev (unassisted)",
+      "Carlsson 8 (Lund (Afanasyev))"
+    ]
   },
   {
     "game_id": 1028534,
