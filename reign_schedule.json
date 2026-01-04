@@ -511,12 +511,14 @@
   {
     "game_id": 1028269,
     "date": "Sat, Jan 3",
-    "status": "6:00 pm PST",
+    "status": "05:51 1st",
     "home_team": "Ontario",
-    "home_score": 0,
+    "home_score": 1,
     "away_team": "Coachella Valley",
-    "away_score": 0,
+    "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028269",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028269&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028269&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028269",
     "season_type": "regular"
   },
