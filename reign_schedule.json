@@ -511,16 +511,25 @@
   {
     "game_id": 1028269,
     "date": "Sat, Jan 3",
-    "status": "19:53 3rd",
+    "status": "Unofficial Final",
     "home_team": "Ontario",
-    "home_score": 1,
+    "home_score": 3,
     "away_team": "Coachella Valley",
     "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028269",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028269&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028269&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028269",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Lee 14 (Guttman (Gawdin))",
+      "Guttman 8 (Ward (Pinelli))",
+      "Kirsanov 4 (Chromiak (Alexandrov))"
+    ],
+    "away_goals": [
+      "McKinnon 2 (Novak (Šalé))",
+      "Rehkopf 5 (Jugnauth (Ottavainen))"
+    ]
   },
   {
     "game_id": 1028443,
