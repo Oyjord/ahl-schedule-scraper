@@ -775,7 +775,7 @@
   {
     "game_id": 1028276,
     "date": "Sun, Jan 4",
-    "status": "20:00 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 3,
     "away_team": "Iowa",
@@ -784,7 +784,14 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028276&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028276&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028276",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Chromiak 13 (Gawdin) (unassisted)",
+      "Lee 15 (Bolduc (Hicketts))"
+    ],
+    "away_goals": [
+
+    ]
   },
   {
     "game_id": 1028612,
