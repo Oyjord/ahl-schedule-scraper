@@ -1190,7 +1190,7 @@
   {
     "game_id": 1028286,
     "date": "Wed, Jan 7",
-    "status": "End of 2nd",
+    "status": "Unofficial Final",
     "home_team": "Ontario",
     "home_score": 4,
     "away_team": "Iowa",
@@ -1199,7 +1199,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028286&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028286&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028286",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Connors 8 (Jämsen (Wright))",
+      "Guttman 9 (Alexandrov) (unassisted)",
+      "Wright 7 (Gawdin (Hicketts))",
+      "Chromiak 14 (Alexandrov (Gawdin))"
+    ],
+    "away_goals": [
+      "Katchouk 5 (Foudy (Gleason))",
+      "Lambos 3 (Gambrell (Olausson))",
+      "Mayhew 10 (Špaček (Gambrell))"
+    ]
   },
   {
     "game_id": 1028668,
