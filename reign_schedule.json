@@ -73,16 +73,28 @@
   {
     "game_id": 1028295,
     "date": "Fri, Jan 9",
-    "status": "00:06 OT",
+    "status": "Final SO",
     "home_team": "Ontario",
-    "home_score": 4,
+    "home_score": 5,
     "away_team": "Henderson",
     "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028295",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028295&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028295&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028295",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Ziemmer 3 (Connors (Alexandrov))",
+      "Doty 1 (Mastrodonato (Hughes))",
+      "Jämsen 6 (Hughes (Pinelli))",
+      "Salin 2 (Ziemmer (Jämsen))"
+    ],
+    "away_goals": [
+      "McLain (unassisted)",
+      "Megna 3 (Davies (Fleming))",
+      "Stanick 2 (Laczynski (Davies))",
+      "McLain 8 (Kmec (Hallum))"
+    ]
   },
   {
     "game_id": 1028676,
