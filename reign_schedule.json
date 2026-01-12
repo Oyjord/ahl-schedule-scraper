@@ -765,16 +765,24 @@
   {
     "game_id": 1028318,
     "date": "Sun, Jan 11",
-    "status": "06:09 3rd",
+    "status": "Final",
     "home_team": "Bakersfield",
-    "home_score": 0,
+    "home_score": 3,
     "away_team": "Ontario",
     "away_score": 0,
     "game_center_url": "https://theahl.com/stats/game-center/1028318",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028318&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028318&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028318",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Marjala 9 (Griffith (Hutson))",
+      "Hutson 23 (Stonehouse) (unassisted)",
+      "Marjala 10 (Stonehouse (Griffith))"
+    ],
+    "away_goals": [
+
+    ]
   },
   {
     "game_id": 1028368,
