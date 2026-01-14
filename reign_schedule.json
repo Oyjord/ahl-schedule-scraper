@@ -1047,16 +1047,29 @@
   {
     "game_id": 1028325,
     "date": "Tue, Jan 13",
-    "status": "18:08 3rd",
+    "status": "Unofficial Final",
     "home_team": "Colorado",
-    "home_score": 1,
+    "home_score": 3,
     "away_team": "Ontario",
-    "away_score": 4,
+    "away_score": 6,
     "game_center_url": "https://theahl.com/stats/game-center/1028325",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028325&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028325&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028325",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Bradley 5 (Polin (Prishchepov))",
+      "Prishchepov 2 (Attard (Ahcan))",
+      "Bradley 6 (Polin (Prishchepov))"
+    ],
+    "away_goals": [
+      "Bolduc 5 (Rego (Jämsen))",
+      "Pinelli (unassisted)",
+      "Rego 2 (Isogai (Lawrence))",
+      "Jämsen 7 (Hughes) (unassisted)",
+      "Wright 8 (Connors) (unassisted)",
+      "Chromiak 15 (Gawdin (Guttman))"
+    ]
   },
   {
     "game_id": 1027958,
