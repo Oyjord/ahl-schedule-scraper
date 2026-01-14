@@ -1047,7 +1047,7 @@
   {
     "game_id": 1028325,
     "date": "Tue, Jan 13",
-    "status": "Unofficial Final",
+    "status": "Final",
     "home_team": "Colorado",
     "home_score": 3,
     "away_team": "Ontario",
@@ -1066,7 +1066,7 @@
       "Bolduc 5 (Rego (Jämsen))",
       "Pinelli (unassisted)",
       "Rego 2 (Isogai (Lawrence))",
-      "Jämsen 7 (Hughes) (unassisted)",
+      "Jämsen 7 (Hughes (Pinelli))",
       "Wright 8 (Connors) (unassisted)",
       "Chromiak 15 (Gawdin (Guttman))"
     ]
