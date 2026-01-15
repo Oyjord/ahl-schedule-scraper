@@ -1205,16 +1205,26 @@
   {
     "game_id": 1028329,
     "date": "Wed, Jan 14",
-    "status": "12:19 3rd",
+    "status": "Unofficial Final",
     "home_team": "Colorado",
     "home_score": 3,
     "away_team": "Ontario",
-    "away_score": 1,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028329",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028329&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028329&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028329",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Megna 19 (Felhaber (Barré-Boulet))",
+      "Bardakov 1 (Makar (Aamodt))",
+      "Polin 4 (Gagne) (unassisted)"
+    ],
+    "away_goals": [
+      "Alexandrov 8 (Chromiak (Connors))",
+      "Connors 9 (Chromiak (Alexandrov))",
+      "Alexandrov 9 (Chromiak) (unassisted)"
+    ]
   },
   {
     "game_id": 1028421,
