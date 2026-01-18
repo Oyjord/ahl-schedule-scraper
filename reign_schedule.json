@@ -501,16 +501,27 @@
   {
     "game_id": 1028357,
     "date": "Sat, Jan 17",
-    "status": "00:35 3rd",
+    "status": "Final",
     "home_team": "Texas",
     "home_score": 3,
     "away_team": "Ontario",
-    "away_score": 2,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028357",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028357&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028357&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028357",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Chisholm 1 (Taylor (McKenzie))",
+      "Scott 8 (Hughes (Krys))",
+      "Karow 4 (Hughes (Seminoff))"
+    ],
+    "away_goals": [
+      "Isogai (unassisted)",
+      "Guttman 10 (Chromiak (Alexandrov))",
+      "Guttman 11 (Ziemmer (Chromiak))",
+      "Wright 9 (Pinelli (Connors))"
+    ]
   },
   {
     "game_id": 1028402,
