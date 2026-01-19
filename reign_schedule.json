@@ -800,16 +800,24 @@
   {
     "game_id": 1028368,
     "date": "Sun, Jan 18",
-    "status": "End of 1st",
+    "status": "Final",
     "home_team": "Texas",
-    "home_score": 1,
+    "home_score": 3,
     "away_team": "Ontario",
     "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028368",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028368&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028368&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028368",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Shlaine 11 (Krys (Seminoff))",
+      "Hughes 7 (Taylor (Scott))",
+      "Hanas 7 (Karow (Lind))"
+    ],
+    "away_goals": [
+      "Guttman 12 (Connors (Chromiak))"
+    ]
   },
   {
     "game_id": 1028276,
