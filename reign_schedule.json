@@ -61,7 +61,7 @@
   {
     "game_id": 1028385,
     "date": "Fri, Jan 23",
-    "status": "04:26 OT",
+    "status": "Final OT",
     "home_team": "Coachella Valley",
     "home_score": 2,
     "away_team": "Ontario",
@@ -70,7 +70,16 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028385&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028385&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028385",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Šalé (unassisted)",
+      "Hayden 11 (Morrison (Firkus))"
+    ],
+    "away_goals": [
+      "Gawdin 7 (Alexandrov (Chromiak))",
+      "Guttman 13 (Booth (Brown))",
+      "Alexandrov 10 (Guttman) (unassisted)"
+    ]
   },
   {
     "game_id": 1028295,
