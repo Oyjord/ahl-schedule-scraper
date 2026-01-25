@@ -537,16 +537,25 @@
   {
     "game_id": 1028402,
     "date": "Sat, Jan 24",
-    "status": "14:49 3rd",
+    "status": "Unofficial Final",
     "home_team": "Ontario",
-    "home_score": 3,
+    "home_score": 4,
     "away_team": "Colorado",
     "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028402",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028402&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028402&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028402",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Guttman 14 (Brown (Alexandrov))",
+      "Guttman 15 (Alexandrov (Dvořák))",
+      "Lee 16 (Bolduc) (unassisted)",
+      "Jämsen 8 (Gawdin) (unassisted)"
+    ],
+    "away_goals": [
+      "Gushchin 12 (Yoon (Behrens))"
+    ]
   },
   {
     "game_id": 1028269,
