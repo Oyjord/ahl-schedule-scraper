@@ -1274,16 +1274,27 @@
   {
     "game_id": 1028421,
     "date": "Wed, Jan 28",
-    "status": "12:10 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 5,
     "away_team": "Abbotsford",
-    "away_score": 1,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028421",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028421&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028421&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028421",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Lee 17 (Chromiak (Gawdin))",
+      "Wright 10 (Rego (Jämsen))",
+      "Gawdin 8 (Alexandrov (Guttman))",
+      "Jämsen (unassisted)",
+      "Pinelli 6 (Wright) (unassisted)"
+    ],
+    "away_goals": [
+      "Reichel 3 (Schuldt) (unassisted)",
+      "Alriksson 6 (Berard (Khaira))"
+    ]
   },
   {
     "game_id": 1028286,
