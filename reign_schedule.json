@@ -583,7 +583,7 @@
   {
     "game_id": 1028443,
     "date": "Sat, Jan 31",
-    "status": "00:00 3rd",
+    "status": "Final",
     "home_team": "San Diego",
     "home_score": 4,
     "away_team": "Ontario",
@@ -592,7 +592,18 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028443&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028443&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028443",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Caulfield 12 (Hinds) (unassisted)",
+      "Hinds 2 (Caulfield (Myatovic))",
+      "Carpenter 8 (Luneau (Gaucher))",
+      "Gaucher 5 (Nesterenko (Caulfield))"
+    ],
+    "away_goals": [
+      "Lee 18 (Kirsanov (Booth))",
+      "Wright 11 (Kirsanov (Ziemmer))",
+      "Dvořák 3 (Pinelli (Wright))"
+    ]
   },
   {
     "game_id": 1028690,
