@@ -583,12 +583,14 @@
   {
     "game_id": 1028443,
     "date": "Sat, Jan 31",
-    "status": "6:00 pm PST",
+    "status": "07:56 1st",
     "home_team": "San Diego",
     "home_score": 0,
     "away_team": "Ontario",
-    "away_score": 0,
+    "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028443",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028443&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028443&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028443",
     "season_type": "regular"
   },
