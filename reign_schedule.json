@@ -789,16 +789,26 @@
   {
     "game_id": 1028455,
     "date": "Sun, Feb 1",
-    "status": "End of 1st",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 1,
     "away_team": "Coachella Valley",
-    "away_score": 2,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1028455",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028455&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028455&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028455",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Hughes 3 (Bolduc (Pinelli))"
+    ],
+    "away_goals": [
+      "Firkus 15 (Nyman (Price))",
+      "Roed 4 (Nelson) (unassisted)",
+      "Stephens 7 (Roed (Šalé))",
+      "Roed 5 (Jugnauth (Morrison))",
+      "Firkus 16 (Fisker Mølgaard) (unassisted)"
+    ]
   },
   {
     "game_id": 1028571,
