@@ -1263,16 +1263,26 @@
   {
     "game_id": 1028461,
     "date": "Wed, Feb 4",
-    "status": "12:06 3rd",
+    "status": "Final",
     "home_team": "Ontario",
-    "home_score": 3,
+    "home_score": 5,
     "away_team": "Tucson",
     "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028461",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028461&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028461&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028461",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Doty 2 (Lawrence (Bolduc))",
+      "Chromiak 16 (Kirsanov) (unassisted)",
+      "Gawdin 9 (Chromiak) (unassisted)",
+      "Jämsen 10 (Lee (Hughes))",
+      "Pinelli 7 (Wright) (unassisted)"
+    ],
+    "away_goals": [
+      "Rooney 8 (Hebig (Walker))"
+    ]
   },
   {
     "game_id": 1028329,
