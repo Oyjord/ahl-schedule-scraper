@@ -1263,12 +1263,14 @@
   {
     "game_id": 1028461,
     "date": "Wed, Feb 4",
-    "status": "7:00 pm PST",
+    "status": "02:17 1st",
     "home_team": "Ontario",
-    "home_score": 0,
+    "home_score": 3,
     "away_team": "Tucson",
     "away_score": 0,
     "game_center_url": "https://theahl.com/stats/game-center/1028461",
+    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028461&lang_id=1",
+    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028461&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028461",
     "season_type": "regular"
   },
