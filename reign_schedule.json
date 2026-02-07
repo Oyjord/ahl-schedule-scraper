@@ -49,16 +49,27 @@
   {
     "game_id": 1028468,
     "date": "Fri, Feb 6",
-    "status": "08:09 3rd",
+    "status": "Final",
     "home_team": "Bakersfield",
-    "home_score": 1,
+    "home_score": 3,
     "away_team": "Ontario",
-    "away_score": 3,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028468",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028468&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028468&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028468",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Prokop 3 (Pitlick (D’Amato))",
+      "Hamblin 14 (Hutson (Howard))",
+      "Marjala 13 (Hamblin (Griffith))"
+    ],
+    "away_goals": [
+      "Jämsen 11 (Hicketts) (unassisted)",
+      "Guttman 16 (Booth) (unassisted)",
+      "Gawdin 10 (Guttman (Millar))",
+      "Wright 12 (Portillo) (unassisted)"
+    ]
   },
   {
     "game_id": 1028385,
