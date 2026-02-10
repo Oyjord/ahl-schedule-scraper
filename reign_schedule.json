@@ -145,18 +145,6 @@
     "season_type": "regular"
   },
   {
-    "game_id": 1028724,
-    "date": "Fri, Mar 20",
-    "status": "7:00 pm CDT",
-    "home_team": "Iowa",
-    "home_score": 0,
-    "away_team": "Ontario",
-    "away_score": 0,
-    "game_center_url": "https://theahl.com/stats/game-center/1028724",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028724",
-    "season_type": "regular"
-  },
-  {
     "game_id": 1028773,
     "date": "Fri, Mar 27",
     "status": "7:00 pm MST",
@@ -572,31 +560,6 @@
     ]
   },
   {
-    "game_id": 1028357,
-    "date": "Sat, Jan 17",
-    "status": "Final",
-    "home_team": "Texas",
-    "home_score": 3,
-    "away_team": "Ontario",
-    "away_score": 4,
-    "game_center_url": "https://theahl.com/stats/game-center/1028357",
-    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028357&lang_id=1",
-    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028357&lang_id=1",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028357",
-    "season_type": "regular",
-    "home_goals": [
-      "Chisholm 1 (Taylor (McKenzie))",
-      "Scott 8 (Hughes (Krys))",
-      "Karow 4 (Hughes (Seminoff))"
-    ],
-    "away_goals": [
-      "Isogai (unassisted)",
-      "Guttman 10 (Chromiak (Alexandrov))",
-      "Guttman 11 (Ziemmer (Chromiak))",
-      "Wright 9 (Pinelli (Connors))"
-    ]
-  },
-  {
     "game_id": 1028402,
     "date": "Sat, Jan 24",
     "status": "Final",
@@ -677,18 +640,6 @@
     "away_score": 0,
     "game_center_url": "https://theahl.com/stats/game-center/1028690",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028690",
-    "season_type": "regular"
-  },
-  {
-    "game_id": 1028737,
-    "date": "Sat, Mar 21",
-    "status": "5:00 pm CDT",
-    "home_team": "Iowa",
-    "home_score": 0,
-    "away_team": "Ontario",
-    "away_score": 0,
-    "game_center_url": "https://theahl.com/stats/game-center/1028737",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028737",
     "season_type": "regular"
   },
   {
@@ -941,49 +892,6 @@
     ]
   },
   {
-    "game_id": 1028368,
-    "date": "Sun, Jan 18",
-    "status": "Final",
-    "home_team": "Texas",
-    "home_score": 3,
-    "away_team": "Ontario",
-    "away_score": 1,
-    "game_center_url": "https://theahl.com/stats/game-center/1028368",
-    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028368&lang_id=1",
-    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028368&lang_id=1",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028368",
-    "season_type": "regular",
-    "home_goals": [
-      "Shlaine 11 (Krys (Seminoff))",
-      "Hughes 7 (Taylor (Scott))",
-      "Hanas 7 (Karow (Lind))"
-    ],
-    "away_goals": [
-      "Guttman 12 (Connors (Chromiak))"
-    ]
-  },
-  {
-    "game_id": 1028276,
-    "date": "Sun, Jan 4",
-    "status": "Final",
-    "home_team": "Ontario",
-    "home_score": 3,
-    "away_team": "Iowa",
-    "away_score": 0,
-    "game_center_url": "https://theahl.com/stats/game-center/1028276",
-    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028276&lang_id=1",
-    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028276&lang_id=1",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028276",
-    "season_type": "regular",
-    "home_goals": [
-      "Chromiak 13 (Gawdin (Dvořák))",
-      "Lee 15 (Bolduc (Hicketts))"
-    ],
-    "away_goals": [
-
-    ]
-  },
-  {
     "game_id": 1028276,
     "date": "Sun, Jan 4",
     "status": "Final",
@@ -1027,29 +935,6 @@
     "game_center_url": "https://theahl.com/stats/game-center/1028657",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028657",
     "season_type": "regular"
-  },
-  {
-    "game_id": 1028081,
-    "date": "Sun, Nov 30",
-    "status": "Final",
-    "home_team": "Ontario",
-    "home_score": 1,
-    "away_team": "Texas",
-    "away_score": 4,
-    "game_center_url": "https://theahl.com/stats/game-center/1028081",
-    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028081&lang_id=1",
-    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028081&lang_id=1",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028081",
-    "season_type": "regular",
-    "home_goals": [
-      "Guttman 5 (Gawdin) (unassisted)"
-    ],
-    "away_goals": [
-      "Shlaine 5 (Hughes (White))",
-      "Shlaine 6 (Hughes (Tuomaala))",
-      "Lind (unassisted)",
-      "Seminoff 4 (Shlaine (Karow))"
-    ]
   },
   {
     "game_id": 1028081,
@@ -1226,32 +1111,6 @@
     "away_goals": [
       "Ward 12 (Guttman (Alexandrov))",
       "Lee 13 (Alexandrov (Gawdin))"
-    ]
-  },
-  {
-    "game_id": 1028127,
-    "date": "Tue, Dec 9",
-    "status": "Final",
-    "home_team": "Ontario",
-    "home_score": 6,
-    "away_team": "Texas",
-    "away_score": 3,
-    "game_center_url": "https://theahl.com/stats/game-center/1028127",
-    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028127&lang_id=1",
-    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028127&lang_id=1",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028127",
-    "season_type": "regular",
-    "home_goals": [
-      "Alexandrov 5 (Guttman (Bolduc))",
-      "Connors 5 (Wright (Lee))",
-      "Alexandrov 6 (Booth (Ziemmer))",
-      "Connors 6 (Wright (Booth))",
-      "Pinelli 4 (Ward (Gawdin))"
-    ],
-    "away_goals": [
-      "Stranges 4 (Bertucci (Lind))",
-      "Shlaine 8 (Bertucci) (unassisted)",
-      "Scott 5 (McKenzie (Lind))"
     ]
   },
   {
@@ -1497,31 +1356,6 @@
     "away_goals": [
       "Reichel 3 (Schuldt) (unassisted)",
       "Alriksson 6 (Berard (Khaira))"
-    ]
-  },
-  {
-    "game_id": 1028286,
-    "date": "Wed, Jan 7",
-    "status": "Final",
-    "home_team": "Ontario",
-    "home_score": 4,
-    "away_team": "Iowa",
-    "away_score": 3,
-    "game_center_url": "https://theahl.com/stats/game-center/1028286",
-    "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028286&lang_id=1",
-    "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028286&lang_id=1",
-    "game_summary_url": "https://theahl.com/stats/game-summary/1028286",
-    "season_type": "regular",
-    "home_goals": [
-      "Connors 8 (Jämsen (Wright))",
-      "Guttman 9 (Alexandrov (Gawdin))",
-      "Wright 7 (Gawdin (Hicketts))",
-      "Chromiak 14 (Alexandrov (Gawdin))"
-    ],
-    "away_goals": [
-      "Katchouk 5 (Foudy (Gleason))",
-      "Lambos 3 (Gambrell (Olausson))",
-      "Mayhew 10 (Jones (Špaček))"
     ]
   },
   {
