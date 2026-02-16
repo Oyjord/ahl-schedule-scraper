@@ -345,16 +345,28 @@
   {
     "game_id": 1028525,
     "date": "Mon, Feb 16",
-    "status": "08:26 3rd",
+    "status": "Unofficial Final",
     "home_team": "Abbotsford",
-    "home_score": 3,
+    "home_score": 5,
     "away_team": "Ontario",
     "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028525",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028525&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028525&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028525",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Lekkerimäki 12 (Mueller (Schuldt))",
+      "Berard 10 (Åman (Mynio))",
+      "Khaira 3 (Mancini (Schuldt))",
+      "Lekkerimäki 13 (Mueller (Bains))",
+      "Mueller 10 (Woo (Bains))"
+    ],
+    "away_goals": [
+      "Jämsen 12 (Pinelli) (unassisted)",
+      "Gawdin 11 (Chromiak (Alexandrov))",
+      "Jämsen 13 (Alexandrov) (unassisted)"
+    ]
   },
   {
     "game_id": 1028865,
