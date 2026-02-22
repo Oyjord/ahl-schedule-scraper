@@ -524,16 +524,26 @@
   {
     "game_id": 1028564,
     "date": "Sat, Feb 21",
-    "status": "02:17 3rd",
+    "status": "Final",
     "home_team": "Tucson",
     "home_score": 2,
     "away_team": "Ontario",
-    "away_score": 3,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028564",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028564&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028564&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028564",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Poganski 13 (Simashev (Russo))",
+      "But 9 (Agozzino) (unassisted)"
+    ],
+    "away_goals": [
+      "Pinelli 9 (Guttman) (unassisted)",
+      "Jämsen 14 (Pinelli) (unassisted)",
+      "Lee 19 (Connors (Salin))",
+      "Millar 2 (Gawdin) (unassisted)"
+    ]
   },
   {
     "game_id": 1028492,
