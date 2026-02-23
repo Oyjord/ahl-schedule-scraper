@@ -873,16 +873,28 @@
   {
     "game_id": 1028571,
     "date": "Sun, Feb 22",
-    "status": "End of 1st",
+    "status": "Final",
     "home_team": "Tucson",
-    "home_score": 0,
+    "home_score": 3,
     "away_team": "Ontario",
-    "away_score": 1,
+    "away_score": 5,
     "game_center_url": "https://theahl.com/stats/game-center/1028571",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028571&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028571&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028571",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Perunovich 4 (Matikka (Allard))",
+      "Poganski 14 (But (Simashev))",
+      "Rooney 11 (Allard) (unassisted)"
+    ],
+    "away_goals": [
+      "Lee 20 (Chromiak (Connors))",
+      "Lee 21 (Jämsen (Bolduc))",
+      "Chromiak 17 (Gawdin (Alexandrov))",
+      "Wright 13 (Connors) (unassisted)",
+      "Wright 14 (Lee) (unassisted)"
+    ]
   },
   {
     "game_id": 1028318,
