@@ -964,16 +964,25 @@
   {
     "game_id": 1028612,
     "date": "Sun, Mar 1",
-    "status": "End of 1st",
+    "status": "Final",
     "home_team": "Ontario",
-    "home_score": 1,
+    "home_score": 4,
     "away_team": "Bakersfield",
-    "away_score": 1,
+    "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028612",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028612&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028612&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028612",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Wright 15 (Millar (Jämsen))",
+      "Ziemmer 7 (Brown (Bolduc))",
+      "Guttman 19 (Lee (Hicketts))"
+    ],
+    "away_goals": [
+      "Leppanen 8 (Marjala (Griffith))",
+      "Samanski 8 (Järventie (Carfagna))"
+    ]
   },
   {
     "game_id": 1028657,
