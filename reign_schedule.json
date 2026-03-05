@@ -1494,7 +1494,7 @@
   {
     "game_id": 1028624,
     "date": "Wed, Mar 4",
-    "status": "00:00 3rd",
+    "status": "Final",
     "home_team": "Ontario",
     "home_score": 4,
     "away_team": "Tucson",
@@ -1503,7 +1503,16 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028624&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028624&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028624",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Chromiak 18 (Lee (Brown))",
+      "Lee 22 (Guttman (Gawdin))",
+      "Wright 16 (Booth (Pinelli))",
+      "Wright 17 (Millar) (unassisted)"
+    ],
+    "away_goals": [
+      "Agozzino 10 (unassisted)"
+    ]
   },
   {
     "game_id": 1027963,
