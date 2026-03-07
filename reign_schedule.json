@@ -159,16 +159,26 @@
   {
     "game_id": 1028636,
     "date": "Fri, Mar 6",
-    "status": "07:31 3rd",
+    "status": "Unofficial Final",
     "home_team": "Ontario",
-    "home_score": 2,
+    "home_score": 4,
     "away_team": "Henderson",
-    "away_score": 2,
+    "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028636",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028636&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028636&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028636",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Isogai 2 (Booth (Kirsanov))",
+      "Chromiak (unassisted)",
+      "Lee 23 (Booth (Guttman))"
+    ],
+    "away_goals": [
+      "Brabenec 8 (McLain (Fleming))",
+      "Sapovaliv 12 (Laczynski (Cormier))",
+      "Lavoie 13 (Connelly) (unassisted)"
+    ]
   },
   {
     "game_id": 1028016,
