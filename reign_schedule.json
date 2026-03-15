@@ -691,16 +691,27 @@
   {
     "game_id": 1028690,
     "date": "Sat, Mar 14",
-    "status": "10:35 3rd",
+    "status": "Final OT",
     "home_team": "Ontario",
-    "home_score": 2,
+    "home_score": 3,
     "away_team": "Coachella Valley",
-    "away_score": 2,
+    "away_score": 4,
     "game_center_url": "https://theahl.com/stats/game-center/1028690",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028690&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028690&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028690",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Lee 24 (Isogai) (unassisted)",
+      "Ziemmer 8 (Pinelli (Booth))",
+      "Ziemmer 9 (Hughes (Novikov))"
+    ],
+    "away_goals": [
+      "Šalé 10 (Jugnauth (Hayden))",
+      "Roed 8 (Uens) (unassisted)",
+      "Loshko 5 (Olofsson) (unassisted)",
+      "Nelson 7 (Roed) (unassisted)"
+    ]
   },
   {
     "game_id": 1028737,
