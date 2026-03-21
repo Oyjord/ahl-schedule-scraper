@@ -727,11 +727,11 @@
   {
     "game_id": 1028737,
     "date": "Sat, Mar 21",
-    "status": "06:19 2nd",
+    "status": "End of 2nd",
     "home_team": "Iowa",
     "home_score": 1,
     "away_team": "Ontario",
-    "away_score": 0,
+    "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028737",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028737&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028737&lang_id=1",
