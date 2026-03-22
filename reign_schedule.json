@@ -727,16 +727,24 @@
   {
     "game_id": 1028737,
     "date": "Sat, Mar 21",
-    "status": "End of 2nd",
+    "status": "Final",
     "home_team": "Iowa",
     "home_score": 1,
     "away_team": "Ontario",
-    "away_score": 1,
+    "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028737",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028737&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028737&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028737",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Mayhew 17 (Jones (Gambrell))"
+    ],
+    "away_goals": [
+      "Alexandrov 12 (Chromiak (Guttman))",
+      "Chromiak (unassisted)",
+      "Lee 25 (unassisted)"
+    ]
   },
   {
     "game_id": 1028786,
