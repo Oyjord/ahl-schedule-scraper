@@ -38,7 +38,7 @@
     "season_type": "regular",
     "home_goals": [
       "Nielsen 11 (Tynan (Aamodt))",
-      "Megna 11 (Felhaber (Barré-Boulet))"
+      "Megna 10 (Felhaber (Barré-Boulet))"
     ],
     "away_goals": [
       "Ward (unassisted)",
@@ -65,8 +65,8 @@
       "Marjala 13 (Hamblin (Griffith))"
     ],
     "away_goals": [
-      "Jämsen 12 (Hicketts) (unassisted)",
-      "Guttman 17 (Booth) (unassisted)",
+      "Jämsen 11 (Hicketts) (unassisted)",
+      "Guttman 16 (Booth) (unassisted)",
       "Gawdin 10 (Guttman (Millar))",
       "Wright 12 (Portillo) (unassisted)"
     ]
@@ -90,7 +90,7 @@
     ],
     "away_goals": [
       "Gawdin 7 (Alexandrov (Chromiak))",
-      "Guttman 14 (Booth (Brown))",
+      "Guttman 13 (Booth (Brown))",
       "Alexandrov 10 (Guttman) (unassisted)"
     ]
   },
@@ -139,7 +139,7 @@
       "Olofsson 4 (Avon (Nyman))"
     ],
     "away_goals": [
-      "Chromiak 22 (Salin (Connors))",
+      "Chromiak 21 (Salin (Connors))",
       "Hughes 4 (Doty) (unassisted)"
     ]
   },
@@ -391,15 +391,15 @@
     "season_type": "regular",
     "home_goals": [
       "Lekkerimäki 12 (Mueller (Schuldt))",
-      "Berard 11 (Åman (Mynio))",
+      "Berard 10 (Åman (Mynio))",
       "Khaira 3 (Mancini (Schuldt))",
       "Lekkerimäki 13 (Mueller (Bains))",
       "Mueller 10 (Woo (Bains))"
     ],
     "away_goals": [
-      "Jämsen 13 (Pinelli) (unassisted)",
+      "Jämsen 12 (Pinelli) (unassisted)",
       "Gawdin 11 (Chromiak (Alexandrov))",
-      "Jämsen 14 (Alexandrov) (unassisted)"
+      "Jämsen 13 (Alexandrov) (unassisted)"
     ]
   },
   {
@@ -452,11 +452,11 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028151",
     "season_type": "regular",
     "home_goals": [
-      "Megna 12 (Nielsen (Attard))",
+      "Megna 11 (Nielsen (Attard))",
       "Nielsen 12 (Megna (Ahcan))",
       "Barré-Boulet 7 (Attard (Jedlička))",
       "Makar 6 (Barré-Boulet (Ahcan))",
-      "Megna 13 (Felhaber (Attard))",
+      "Megna 12 (Felhaber (Attard))",
       "Barré-Boulet 8 (Megna (Attard))"
     ],
     "away_goals": [
@@ -552,7 +552,7 @@
       "Poisson 4 (Knyzhov (Walker))"
     ],
     "away_goals": [
-      "Guttman 19 (Connors (Chromiak))"
+      "Guttman 18 (Connors (Chromiak))"
     ]
   },
   {
@@ -574,7 +574,7 @@
     ],
     "away_goals": [
       "Pinelli 9 (Guttman) (unassisted)",
-      "Jämsen 15 (Pinelli) (unassisted)",
+      "Jämsen 14 (Pinelli) (unassisted)",
       "Lee 19 (Connors (Salin))",
       "Millar 2 (Gawdin) (unassisted)"
     ]
@@ -593,7 +593,7 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028492",
     "season_type": "regular",
     "home_goals": [
-      "Guttman 18 (Alexandrov) (unassisted)",
+      "Guttman 17 (Alexandrov) (unassisted)",
       "Ziemmer 4 (Kirsanov (Booth))",
       "Ziemmer 5 (Millar) (unassisted)",
       "Ziemmer 6 (Wright (Hicketts))"
@@ -623,8 +623,8 @@
     ],
     "away_goals": [
       "Isogai (unassisted)",
-      "Guttman 11 (Chromiak (Alexandrov))",
-      "Guttman 12 (Ziemmer (Chromiak))",
+      "Guttman 10 (Chromiak (Alexandrov))",
+      "Guttman 11 (Ziemmer (Chromiak))",
       "Wright 9 (Pinelli (Connors))"
     ]
   },
@@ -642,10 +642,10 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028402",
     "season_type": "regular",
     "home_goals": [
-      "Guttman 15 (Brown (Alexandrov))",
-      "Guttman 16 (Alexandrov (Dvořák))",
+      "Guttman 14 (Brown (Alexandrov))",
+      "Guttman 15 (Alexandrov (Dvořák))",
       "Lee 16 (Bolduc) (unassisted)",
-      "Jämsen 9 (Gawdin) (unassisted)"
+      "Jämsen 8 (Gawdin) (unassisted)"
     ],
     "away_goals": [
       "Gushchin 12 (Yoon (Behrens))"
@@ -666,7 +666,7 @@
     "season_type": "regular",
     "home_goals": [
       "Lee 14 (Guttman (Gawdin))",
-      "Guttman 9 (Ward (Pinelli))",
+      "Guttman 8 (Ward (Pinelli))",
       "Kirsanov 4 (Chromiak (Alexandrov))"
     ],
     "away_goals": [
@@ -688,7 +688,7 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028443",
     "season_type": "regular",
     "home_goals": [
-      "Caulfield 13 (Hinds) (unassisted)",
+      "Caulfield 12 (Hinds) (unassisted)",
       "Hinds 2 (Caulfield (Myatovic))",
       "Carpenter 8 (Luneau (Gaucher))",
       "Gaucher 5 (Nesterenko (Caulfield))"
@@ -990,11 +990,11 @@
     "season_type": "regular",
     "home_goals": [
       "Shlaine 11 (Krys (Seminoff))",
-      "Hughes 8 (Taylor (Scott))",
+      "Hughes 7 (Taylor (Scott))",
       "Hanas 7 (Karow (Lind))"
     ],
     "away_goals": [
-      "Guttman 13 (Connors (Chromiak))"
+      "Guttman 12 (Connors (Chromiak))"
     ]
   },
   {
@@ -1034,7 +1034,7 @@
     "home_goals": [
       "Wright 15 (Millar (Jämsen))",
       "Ziemmer 7 (Brown (Bolduc))",
-      "Guttman 20 (Lee (Hicketts))"
+      "Guttman 19 (Lee (Hicketts))"
     ],
     "away_goals": [
       "Leppanen 8 (Marjala (Griffith))",
@@ -1059,7 +1059,7 @@
     ],
     "away_goals": [
       "Gawdin 12 (Guttman (Brown))",
-      "Guttman 21 (Gawdin) (unassisted)"
+      "Guttman 20 (Gawdin) (unassisted)"
     ]
   },
   {
@@ -1232,7 +1232,7 @@
     "season_type": "regular",
     "home_goals": [
       "McLain 6 (Uchacz (Davies))",
-      "Hemmerling 8 (Coghlan (Laczynski))"
+      "Hemmerling 7 (Coghlan (Laczynski))"
     ],
     "away_goals": [
       "Ward 12 (Guttman (Alexandrov))",
@@ -1386,16 +1386,16 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028247",
     "season_type": "regular",
     "home_goals": [
-      "Guttman 7 (Gawdin (Alexandrov))",
+      "Guttman 6 (Gawdin (Alexandrov))",
       "Connors 7 (Hughes (Ziemmer))",
-      "Guttman 8 (Ward) (unassisted)",
+      "Guttman 7 (Ward) (unassisted)",
       "Rego 1 (Guttman (Alexandrov))"
     ],
     "away_goals": [
       "Wahlstrom 9 (Halttunen (White))",
       "Cardwell 4 (Musty (Huntington))",
       "Bystedt 9 (unassisted)",
-      "Afanasyev 6 (Bystedt) (unassisted)",
+      "Afanasyev 5 (Bystedt) (unassisted)",
       "Carlsson 8 (Lund (Afanasyev))"
     ]
   },
@@ -1419,7 +1419,7 @@
       "Pinelli 8 (Kirsanov) (unassisted)"
     ],
     "away_goals": [
-      "Berard 12 (Åman (Klimovich))",
+      "Berard 11 (Åman (Klimovich))",
       "Stillman 1 (Woo (Knyzhov))"
     ]
   },
@@ -1440,7 +1440,7 @@
       "Doty 2 (Lawrence (Bolduc))",
       "Chromiak 16 (Kirsanov) (unassisted)",
       "Gawdin 9 (Chromiak (Lee))",
-      "Jämsen 11 (Lee (Hughes))",
+      "Jämsen 10 (Lee (Hughes))",
       "Pinelli 7 (Wright) (unassisted)"
     ],
     "away_goals": [
@@ -1461,13 +1461,13 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028329",
     "season_type": "regular",
     "home_goals": [
-      "Megna 20 (Felhaber (Barré-Boulet))",
+      "Megna 19 (Felhaber (Barré-Boulet))",
       "Bardakov 1 (Makar (Aamodt))",
       "Polin 4 (Gagne (Prishchepov))"
     ],
     "away_goals": [
       "Alexandrov 8 (Chromiak (Connors))",
-      "Connors 10 (Chromiak (Alexandrov))",
+      "Connors 9 (Chromiak (Alexandrov))",
       "Alexandrov 9 (Chromiak) (unassisted)"
     ]
   },
@@ -1493,7 +1493,7 @@
     ],
     "away_goals": [
       "Reichel 3 (Schuldt) (unassisted)",
-      "Alriksson 7 (Berard (Khaira))"
+      "Alriksson 6 (Berard (Khaira))"
     ]
   },
   {
@@ -1511,7 +1511,7 @@
     "season_type": "regular",
     "home_goals": [
       "Connors 8 (Jämsen (Wright))",
-      "Guttman 10 (Alexandrov (Gawdin))",
+      "Guttman 9 (Alexandrov (Gawdin))",
       "Wright 7 (Gawdin (Hicketts))",
       "Chromiak 14 (Alexandrov (Gawdin))"
     ],
@@ -1536,7 +1536,7 @@
     "season_type": "regular",
     "home_goals": [
       "Pinelli 10 (Hughes) (unassisted)",
-      "Chromiak 21 (Gawdin (Brown))",
+      "Chromiak 20 (Gawdin (Brown))",
       "Gawdin 13 (Guttman) (unassisted)"
     ],
     "away_goals": [
@@ -1559,9 +1559,9 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028718",
     "season_type": "regular",
     "home_goals": [
-      "Connors 11 (Chromiak) (unassisted)",
+      "Connors 10 (Chromiak) (unassisted)",
       "Ziemmer 10 (Alexandrov (Isogai))",
-      "Connors 12 (Alexandrov) (unassisted)"
+      "Connors 11 (Alexandrov) (unassisted)"
     ],
     "away_goals": [
       "Mueller 15 (Schimek (Klimovich))"
