@@ -1570,16 +1570,24 @@
   {
     "game_id": 1028758,
     "date": "Wed, Mar 25",
-    "status": "13:41 3rd",
+    "status": "Final",
     "home_team": "Henderson",
-    "home_score": 0,
+    "home_score": 3,
     "away_team": "Ontario",
     "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028758",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028758&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028758&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028758",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Cormier 8 (Connelly (Lavoie))",
+      "Brabenec 11 (Coghlan (Megna))",
+      "Laczynski 20 (Cataford (Coghlan))"
+    ],
+    "away_goals": [
+      "Pinelli 12 (Ziemmer (Brown))"
+    ]
   },
   {
     "game_id": 1028624,
