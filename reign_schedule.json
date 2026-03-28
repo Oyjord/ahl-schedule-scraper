@@ -169,16 +169,25 @@
   {
     "game_id": 1028773,
     "date": "Fri, Mar 27",
-    "status": "00:04 1st",
+    "status": "Final",
     "home_team": "Tucson",
-    "home_score": 0,
+    "home_score": 2,
     "away_team": "Ontario",
-    "away_score": 1,
+    "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028773",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028773&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028773&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028773",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Russo 3 (Perunovich (McCartney))",
+      "Luypen 4 (Ricketts) (unassisted)"
+    ],
+    "away_goals": [
+      "Chromiak 23 (Brown (Alexandrov))",
+      "Guttman 21 (Brown (Chromiak))",
+      "Chromiak 24 (Gawdin (Alexandrov))"
+    ]
   },
   {
     "game_id": 1028636,
