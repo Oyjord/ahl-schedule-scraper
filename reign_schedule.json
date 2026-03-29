@@ -760,16 +760,26 @@
   {
     "game_id": 1028786,
     "date": "Sat, Mar 28",
-    "status": "04:16 2nd",
+    "status": "Final",
     "home_team": "Tucson",
-    "home_score": 2,
+    "home_score": 4,
     "away_team": "Ontario",
     "away_score": 2,
     "game_center_url": "https://theahl.com/stats/game-center/1028786",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028786&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028786&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028786",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Hebig 20 (McCartney (Rooney))",
+      "Lutz (unassisted)",
+      "Agozzino 17 (Simashev (Perunovich))",
+      "Agozzino 18 (Poganski) (unassisted)"
+    ],
+    "away_goals": [
+      "Dvořák 4 (Lee (Gawdin))",
+      "Connors 12 (Jämsen (Ziemmer))"
+    ]
   },
   {
     "game_id": 1027904,
