@@ -440,16 +440,28 @@
   {
     "game_id": 1028830,
     "date": "Sat, Apr 4",
-    "status": "02:34 1st",
+    "status": "Final",
     "home_team": "Ontario",
-    "home_score": 1,
+    "home_score": 6,
     "away_team": "Bakersfield",
-    "away_score": 1,
+    "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028830",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028830&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028830&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028830",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Gawdin 15 (Guttman (Hicketts))",
+      "Lee 26 (Pinelli (Connors))",
+      "Hughes 5 (Connors (Booth))",
+      "Alexandrov 13 (Jämsen (Brown))",
+      "Jämsen 16 (Brown (Pinelli))",
+      "Alexandrov 14 (unassisted)"
+    ],
+    "away_goals": [
+      "Järventie 18 (Howard (Hutson))",
+      "Poulin 19 (Petrov) (unassisted)"
+    ]
   },
   {
     "game_id": 1028151,
