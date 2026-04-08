@@ -1245,7 +1245,7 @@
   {
     "game_id": 1028840,
     "date": "Tue, Apr 7",
-    "status": "04:43 OT",
+    "status": "Final OT",
     "home_team": "Ontario",
     "home_score": 2,
     "away_team": "Colorado",
@@ -1254,7 +1254,14 @@
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028840&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028840&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028840",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Chromiak 26 (Guttman) (unassisted)",
+      "Connors 14 (Chromiak (Copley))"
+    ],
+    "away_goals": [
+      "Ahcan 11 (Gushchin (Tynan))"
+    ]
   },
   {
     "game_id": 1028236,
