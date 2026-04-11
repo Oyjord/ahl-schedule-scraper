@@ -2,16 +2,25 @@
   {
     "game_id": 1028858,
     "date": "Fri, Apr 10",
-    "status": "End of 2nd",
+    "status": "Final",
     "home_team": "Ontario",
-    "home_score": 3,
+    "home_score": 4,
     "away_team": "Coachella Valley",
     "away_score": 1,
     "game_center_url": "https://theahl.com/stats/game-center/1028858",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028858&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028858&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028858",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Brown 1 (Alexandrov (Guttman))",
+      "Pinelli 13 (Alexandrov (Millar))",
+      "Isogai 3 (Ziemmer) (unassisted)",
+      "Pinelli 14 (unassisted)"
+    ],
+    "away_goals": [
+      "Novak 5 (Janicke) (unassisted)"
+    ]
   },
   {
     "game_id": 1028899,
