@@ -427,16 +427,25 @@
   {
     "game_id": 1028865,
     "date": "Sat, Apr 11",
-    "status": "03:15 3rd",
+    "status": "Final OT",
     "home_team": "Coachella Valley",
     "home_score": 2,
     "away_team": "Ontario",
-    "away_score": 2,
+    "away_score": 3,
     "game_center_url": "https://theahl.com/stats/game-center/1028865",
     "game_report_url": "https://lscluster.hockeytech.com/game_reports/text-game-report.php?client_code=ahl&game_id=1028865&lang_id=1",
     "game_sheet_url": "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=ahl&game_id=1028865&lang_id=1",
     "game_summary_url": "https://theahl.com/stats/game-summary/1028865",
-    "season_type": "regular"
+    "season_type": "regular",
+    "home_goals": [
+      "Stephens 12 (unassisted)",
+      "Jugnauth 9 (Avon (Morrison))"
+    ],
+    "away_goals": [
+      "Ziemmer 11 (Hughes) (unassisted)",
+      "Chromiak 27 (Gawdin (Alexandrov))",
+      "Gawdin 16 (Guttman (Booth))"
+    ]
   },
   {
     "game_id": 1028910,
