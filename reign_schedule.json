@@ -423,10 +423,16 @@
     "game_summary_url": "https://theahl.com/stats/game-summary/1028525",
     "season_type": "regular",
     "home_goals": [
-
+      "Lekkerimäki 12 (Mueller (Schuldt))",
+      "Berard 10 (Åman (Mynio))",
+      "Khaira 3 (Mancini (Schuldt))",
+      "Lekkerimäki 13 (Mueller (Bains))",
+      "Mueller 10 (Woo (Bains))"
     ],
     "away_goals": [
-
+      "Jämsen 12 (Pinelli) (unassisted)",
+      "Gawdin 11 (Chromiak (Alexandrov))",
+      "Jämsen 13 (Alexandrov) (unassisted)"
     ]
   },
   {
